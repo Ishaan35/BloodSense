@@ -1,0 +1,398 @@
+.DashboardContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f8fc;
+}
+
+.MainGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.temporaryBox{
+    padding: 20px;
+    color: white;
+    background-color: orange;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 12px;
+}
+
+.createNewRecordBox{
+    padding: 10%;
+    background-color: white;
+    border: 3px solid rgb(225, 224, 236);
+    min-height: 15vh;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: rgb(65, 71, 90);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    transition: 0.2s;
+    grid-column: span 2;
+}
+.createNewRecordBox label{
+    pointer-events: none;
+}
+
+.createNewRecordBox:hover{
+box-shadow: 0px 5px 8px 0px #dfdfe9;
+transform: scale(1.005);
+}
+
+.newRecordIcon{
+    background-color: #c0ffed;
+    min-width: 4vw;
+    min-height: 4vw;
+    border-radius: 50%;
+    border: 1px solid #62dcb9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newRecordIcon svg{
+    color: #00b07e;
+    width: 40%;
+    height: 40%
+}
+
+.pastRecordsIcon{
+    background-color: #d9d6f8;
+    min-width: 4vw;
+    min-height: 4vw;
+    border-radius: 50%;
+    border: 1px solid #6e65cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pastRecordsIcon svg{
+    color: #746ae0;
+    width: 40%;
+    height: 40%
+}
+
+.pastDocumentsIcon{
+    background-color: #d0eff8;
+    min-width: 4vw;
+    min-height: 4vw;
+    border-radius: 50%;
+    border: 1px solid #2ec0e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pastDocumentsIcon svg{
+    color: #1cbce8;
+    width: 40%;
+    height: 40%
+}
+
+.analyzeRecordsIcon{
+    background-color: #fdedd2;
+    min-width: 4vw;
+    min-height: 4vw;
+    border-radius: 50%;
+    border: 1px solid #f7b94e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analyzeRecordsIcon svg{
+    color: #f7b94e;
+    width: 40%;
+    height: 40%
+}
+
+
+
+
+.editProfileBox{
+    padding: 10%;
+    background-color: white;
+    border: 3px solid rgb(225, 224, 236);
+    min-height: 15vh;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: rgb(65, 71, 90);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    grid-column: span 2;
+    grid-row: auto / span 2
+}
+.editProfileBox span{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.editProfileBox label{
+    pointer-events: none;
+}
+
+.editProfileBox:hover{
+box-shadow: 0px 5px 8px 0px #dfdfe9;
+transform: scale(1.005);
+}
+
+
+.profileIcon{
+    background-color: #fdd2d2;
+    min-width: 4vw;
+    min-height: 4vw;
+    border-radius: 50%;
+    border: 1px solid #f74e4e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileIcon svg{
+    color: #f74e4e;
+    width: 40%;
+    height: 40%
+}
+
+
+.ProfileCompleteDoughnutStyles{
+    margin-top: 30px;
+    width: 8vw; /* You can set the width to any percentage you want */
+    height: 8vw; /* Set the padding-top to the same percentage as the width */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DoughnutPercentLabel{
+    position: absolute;
+    font-size: 2vw;
+    left: 2.1vw;
+    top: 2.5vw;
+    bottom: 2vw;
+    right: 2vw;
+}
+
+
+.BMIIcon{
+    background-color: #fddeff;
+    min-width: 4vw;
+    min-height: 4vw;
+    border-radius: 50%;
+    border: 1px solid #fc5eff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BMIIcon svg{
+    color: #fc5eff;
+    width: 40%;
+    height: 40%
+}
+
+.BMILabel{
+    position: relative;
+    width: 100%;
+    font-size:5vw;
+    margin-top: 10px;
+}
+
+.IndicatorBar{
+    min-height: 30px;
+    align-self: flex-start;
+    margin-top: 20px;
+    transition: 1.5s ease;  
+}
+.IndicatorBar:hover{
+    filter: brightness(1.5);
+}
+
+.IndicatorMeaning{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.IndicatorBarUnderweight{
+    background-color: rgb(255, 213, 0);
+    border: 2px solid rgb(255, 240, 168);
+}
+.IndicatorBarNormal{
+    background-color: rgb(95, 213, 95);
+    border: 2px solid rgb(181, 248, 181);
+}
+.IndicatorBarOverweight{
+    background-color: rgb(255, 213, 0);
+    border: 2px solid rgb(255, 240, 168);
+}
+
+.IndicatorBarObese{
+    background-color: #fd802e;
+    border: 2px solid #ffc9a6;
+}
+
+.IndicatorBarExtremelyObese{
+    background-color: #ff4a4a;
+    border: 2px solid rgb(255, 192, 192);
+}
+
+
+
+.QuickAccessContainer{
+    padding: 10%;
+    background-color: white;
+    border: 3px solid rgb(225, 224, 236);
+    min-height: 15vh;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: rgb(65, 71, 90);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    grid-column: span 2;
+    grid-row: auto / span 2;
+    position: relative;
+}
+
+
+.QuickAccessContainer > span{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10%;
+}
+.QuickAccessContainer > span > label{
+    margin-right: 10px;
+}
+.QuickAccessContainer > div{
+    position: absolute;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10%;
+}
+
+.QuickAccessContainer label{
+    pointer-events: none;
+}
+
+.QuickAccessContainer:hover{
+box-shadow: 0px 5px 8px 0px #dfdfe9;
+transform: scale(1.005);
+}
+
+
+
+.smallHorizontalLine{
+    height: 0.5px;
+    background-color: lightgray;
+    width: 70%;
+    margin: 30px;
+}
+
+.recentItemlist{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-grow: 1 1;
+}
+
+.ClickableListItem{
+    display: flex;
+    width: 110%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    color: rgb(110, 111, 133);
+    border-bottom: 1px solid rgb(224, 222, 230);
+    cursor: pointer;
+    transition: 0.15s;
+    text-align: right;
+    padding: 10px;
+    
+}
+.ClickableListItem label{
+    pointer-events: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ClickableListItem label svg{
+    margin-left: 5px;
+    margin-top: 3px;
+    transform: scale(1.2);
+}
+.ClickableListItem:hover{
+    -webkit-box-shadow: 0px 0px 8px -2px #B8BCD1; 
+box-shadow: 0px 0px 8px -2px #B8BCD1;
+}
+
+
+.recentDocumentIcon{
+    background-color: #ffe5c5;
+    min-width: 4vw;
+    min-height: 4vw;
+    border-radius: 50%;
+    border: 1px solid #ff945e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recentDocumentIcon svg{
+    color: #ff8234;
+    width: 40%;
+    height: 40%
+}
+
+
+.recentRecordIcon{
+    background-color: #d3ffd8;
+    min-width: 4vw;
+    min-height: 4vw;
+    border-radius: 50%;
+    border: 1px solid #2ac62a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recentRecordIcon svg{
+    color: #2ac62a;
+    width: 40%;
+    height: 40%
+}

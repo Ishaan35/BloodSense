@@ -1,0 +1,35 @@
+.ViewDocumentsPageContainer{
+    width: 100%;
+    min-width: 100vw;
+    display: flex;
+    overflow-x: hidden;
+    bottom: 0;
+    overflow-y: visible;
+    min-height: 100vh;
+
+}
+
+.ViewDocumentsSidebarStyle {
+    flex: 0 0 auto;
+    background-color: #f0f0f0;
+    position: relative;
+    bottom: 0;
+    transition: 0.2s;
+}
+
+.ViewDocumentsSidebarOpenStyle {
+    width: 15%;
+}
+
+.ViewDocumentsSidebarCloseStyle {
+    width: 3%;
+}
+
+.ViewDocumentsContentStyle {
+    flex: 1 1 auto;
+    /* Grow and shrink to fill the remaining space */
+
+    background-color: rgb(233, 233, 239);
+    display: flex;
+}
+

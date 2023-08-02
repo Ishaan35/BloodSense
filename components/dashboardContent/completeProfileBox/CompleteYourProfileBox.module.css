@@ -1,0 +1,33 @@
+.MainBox{
+    padding: 10px;
+    background: url("../../../public/DashboardContentImages/CompleteYourProfile/CompleteProfileBackground.png");
+    background-size: 100% 100%; /* Stretch the background image to the full width and adjust height proportionally */
+    background-position: center; /* Center the background image within the div */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    min-height: 25vh;
+    border-radius: 12px; 
+    cursor: pointer;
+    display: flex;
+    box-shadow: 4px 4px 27px 1px #99A0BF;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.MainBox:hover{
+    box-shadow: 4px 4px 13px 1px #99A0BF;
+    transform: scale(1.01) translate(-1%, -1%);
+}
+
+.MainBoxPlaceholder{
+    background-color: whitesmoke;
+    min-height: 25vh;
+    border-radius: 12px;
+    box-shadow: 4px 4px 27px 1px #99A0BF;
+}
+
+.Title{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10px;
+}

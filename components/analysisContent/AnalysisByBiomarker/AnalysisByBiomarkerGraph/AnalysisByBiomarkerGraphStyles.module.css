@@ -1,0 +1,64 @@
+.MainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition:0.2s;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.NoDataFound{
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(231, 232, 243);
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.NoDataToShowText{
+    color: rgb(151, 151, 161);
+    font-size: 25px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.NoDataFoundIcon{
+    color: rgb(151, 151, 161);
+    transform: scale(3);
+    animation-name: fadeInIcon;
+    animation-duration: 2s;
+}
+
+
+
+
+@keyframes fadeIn {
+    0% {
+      transform: translateY(-20px);
+      color: rgb(231, 232, 243);
+    }
+    
+    100% {
+        transform: translateY(0px);
+        color: rgb(151, 151, 161);
+    }
+  }
+
+  @keyframes fadeInIcon {
+    0% {
+        transform: translateY(-30px);
+        color: rgb(231, 232, 243);
+        transform: scale(3);
+      }
+      
+      100% {
+          transform: translateY(0px);
+          color: rgb(151, 151, 161);
+          transform: scale(3);
+      }
+  }

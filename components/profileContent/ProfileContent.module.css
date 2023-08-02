@@ -1,0 +1,221 @@
+
+.ProfileContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f6fa;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.ProfilePage {
+    height: 70vh;
+    width: 70vw;
+    display: grid;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(180,186,202,0.3); 
+    box-shadow: 0px 0px 8px 2px rgba(180,186,202,0.3);
+}
+
+.SaveBtn{
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 150px;
+    background: linear-gradient(90deg, rgba(254,76,77,1) 0%, rgb(254, 114, 114) 100%);
+    border: 3px solid #fe4c4d;
+    border-radius: 20px;
+    color: white;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.15s;
+
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(180,186,202,0); 
+box-shadow: 0px 0px 8px 2px rgba(180,186,202,0);
+}
+.SaveBtn label{
+    pointer-events: none;
+}
+.SaveBtn svg{
+    color: white !important;
+}
+
+.SaveBtn:hover{
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(255, 113, 113, 0.6); 
+box-shadow: 0px 0px 8px 1px rgba(255, 117, 117, 0.6);
+}
+
+.Header{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Header h1{
+    font-weight: 600;
+    color: #9d9fb2;
+    font-size: 30px;
+    padding: 10px;
+}
+.Header h2{
+    font-weight: 500;
+    color: #6e707b;
+    font-size: 25px;
+    padding: 10px;
+    padding-top: 12px;
+}
+
+.Header svg{
+    color: #6e707b;
+    transform: scale(1.5);
+    margin-top: 3px;
+}
+
+.InfoGrid{
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    padding: 30px;
+}
+
+.InfoGridCol1{
+    width: 40%;
+}
+.InfoGridCol2{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.FieldRow {
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.FieldRow label{
+    color: rgb(107, 110, 129);
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.simpleFlexDiv{
+    display: flex;
+    align-items: center;
+}
+
+.simpleFlexDivCol{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HorizontalLine{
+    width: 100%;
+    height: 0.5px;
+    border: none;
+    background-color: rgb(153, 153, 153);
+    padding: 0px;
+    margin: 0px;
+    align-self: center;
+}
+
+.ChangeFieldTextInput{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(223, 223, 233)
+
+}
+
+.ChangeFieldTextInput::placeholder{
+    color: rgb(170, 170, 170);
+}
+
+.EditButton{
+    margin-left: 10px;
+    padding: 5px;
+    min-width: 50px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(195, 195, 212);
+    outline: none;
+    transition: 0.1s;
+    cursor: pointer;
+    color: rgb(107, 110, 129);
+    font-size: 16px;
+    background-color: #f5f6fa;
+
+}
+
+.DoneChangesButton {
+    margin-left: 10px;
+    padding: 5px;
+    min-width: 50px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(0, 153, 23);
+    outline: none;
+    background-color: rgb(0, 159, 26);
+    transition: 0.1s;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+
+.EditButton:active{
+    background-color: rgb(174, 174, 174);
+}
+
+.DoneChangesButton:active {
+    background-color: rgb(0, 107, 16);;
+}
+
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.imageContainer label{
+    position: absolute;
+    bottom: 15%;
+    right: 20%;
+    height: 40px;
+    width: 40px;
+    background: rgb(255,255,255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #dfe6f1;
+    cursor: pointer;
+}
+
+.imageContainer label svg{
+    color: #fe4c4d;
+    width: 60%;
+    height: 60%;
+}
+
+.UpdatedNameStuff{
+    color: rgb(107, 110, 129);
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: -15px;
+}

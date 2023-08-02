@@ -1,0 +1,244 @@
+.MainContainer{
+    width: 100%;
+    position: relative;
+    background-color: #f6f6ff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: visible;
+    padding-bottom: 10vh;
+    flex: 1;
+}
+
+.Heading{
+    font-size: 25px;
+    font-weight: 500;
+    color: #545b66;
+}
+
+.SearchBox{
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    /* -webkit-box-shadow: 0px 1px 8px 0px #e2e2ec; 
+    box-shadow: 0px 1px 8px 0px #e2e2ec; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 3.5px solid #eaeaf1
+}
+
+.prompt{
+    color: rgb(180, 182, 195);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.Dropdown{
+    width: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.AllInputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.SelectedBiomarker{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    border: 1px solid rgb(182, 184, 206);
+    padding: 10px;
+
+    border-radius: 5px;
+    
+}
+
+.SelectedBiomarker svg{
+    transform: scale(1.5);
+    color: #6f7e97;
+    cursor: pointer;
+}
+
+.DateInput{
+    display: flex;
+    color: #6f7e97;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.DateInput label{
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 18px;
+}
+.DateInput input{
+    padding: 10px;
+    color: #6f7e97;
+    border: 1px solid #c3cad6;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.SearchButton{
+    padding: 10px;
+    width: 10%;
+    background-color: rgb(62, 160, 62);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.SearchButton:hover{
+    background-color: rgb(51, 132, 51);
+    transform: scale(1.05);
+}
+.SearchButton:disabled{
+    opacity: 0.5;
+}
+
+.GraphContainer{
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    /* -webkit-box-shadow: 0px 1px 8px 0px #e2e2ec; 
+    box-shadow: 0px 1px 8px 0px #e2e2ec; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    position: relative;
+    transition: 0.1s;
+    border: 3.5px solid #eaeaf1;
+}
+
+.UnitSelectInput{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.TableContainer{
+    width: 80%;
+    min-height: 20vh;
+    background-color: white;
+    border-radius: 8px;
+    /* -webkit-box-shadow: 0px 1px 8px 0px #e2e2ec; 
+    box-shadow: 0px 1px 8px 0px #e2e2ec; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    position: relative;
+    padding: 50px;
+    border: 3.5px solid #eaeaf1
+}
+
+.TableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    border-collapse: collapse;
+    overflow: hidden; /* This is necessary to hide the corners of table cells */
+    outline: 1px solid #c8cfdf
+  }
+  
+.TableContainer table th{
+    padding: 8px;
+    border: 1px solid #b2bed8;
+    text-align: left;
+    border-collapse: collapse;
+    color: #6e718a;
+  }
+  .TableContainer table td{
+    padding: 8px;
+    border: 1px solid #b2bed8;
+    text-align: left;
+    padding-left: 20px;
+    border-collapse: collapse;
+ }
+  
+.TableContainer table thead {
+    background-color: #f2f2f2;
+    border-collapse: collapse;
+}
+
+.NormalRangeText{
+    padding: 15px;
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    color: #545b66;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.NormalRangeText div{
+    margin-right: 20px;
+}
+
+.NormalRangeHeading{
+    color: rgb(150, 149, 171);
+}
+
+.NormalRangeLegendIcon {
+    width: 20px;
+   height: 20px;
+   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='7' ry='7' stroke='mediumseagreen' stroke-width='3' stroke-dasharray='2%2c6' stroke-dashoffset='9' stroke-linecap='square'/%3e%3c/svg%3e");
+   background-color: rgb(227,247,232);
+   border-radius: 7px;
+    position: relative;
+    transform: scale(1.2);
+  }
+
+  .ValueColumnItem{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-collapse:collapse;
+  }
+  .ValueColumnItem div{
+    position: absolute;
+    right: 10px;
+  }
+
+  .IndicatorBoxGood{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(75, 191, 104);
+    border-radius: 5px;
+    position: relative;
+    transform: scale(1.2);
+    border: 1px solid rgb(42, 164, 73)
+  }
+
+  .IndicatorBoxBad{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 213, 0);
+    border-radius: 7px;
+    position: relative;
+    transform: scale(1.2);
+    border: 1px solid rgb(220, 176, 0)
+  }

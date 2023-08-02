@@ -1,0 +1,2222 @@
+[
+  {
+    "biomarker": "Albumin",
+    "units": [
+      " g/dL",
+      " g/L",
+      " mg/L"
+    ],
+    "normalRanges": {
+      " g/dL": "3.5-5.5",
+      " g/L": "35-55",
+      " mg/L": "35000-55000"
+    }
+  },
+  {
+    "biomarker": "Alkaline phosphatase (ALP)",
+    "units": [
+      " U/L",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " U/L": "40-129",
+      " IU/L": "40-129",
+      " μkat/L": "0.667-2.15"
+    }
+  },
+  {
+    "biomarker": "Alpha-fetoprotein (AFP)",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0-7",
+      " μg/L": "0-7",
+      " IU/mL": "0-5.81"
+    }
+  },
+  {
+    "biomarker": "Amylase",
+    "units": [
+      " U/L",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " U/L": "30-110",
+      " IU/L": "30-110",
+      " μkat/L": "0.5-1.83"
+    }
+  },
+  {
+    "biomarker": "Aspartate aminotransferase (AST)",
+    "units": [
+      " U/L",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " U/L": "8-40",
+      " IU/L": "8-40",
+      " μkat/L": "0.133-0.667"
+    }
+  },
+  {
+    "biomarker": "Basophils",
+    "units": [
+      " %",
+      " absolute count/μL",
+      " cells/L"
+    ],
+    "normalRanges": {
+      " %": "0.5-1",
+      " absolute count/μL": "0-50",
+      " cells/L": "0-50000000"
+    }
+  },
+  {
+    "biomarker": "Bicarbonate (HCO3-)",
+    "units": [
+      " mEq/L",
+      " mmol/L",
+      " mg/dL"
+    ],
+    "normalRanges": {
+      " mEq/L": "22-29",
+      " mmol/L": "22-29",
+      " mg/dL": "880-1150"
+    }
+  },
+  {
+    "biomarker": "Bilirubin, direct",
+    "units": [
+      " mg/dL",
+      " μmol/L",
+      " μg/dL"
+    ],
+    "normalRanges": {
+      " mg/dL": "0.1-0.29",
+      " μmol/L": "1.7-5",
+      " μg/dL": "68-200"
+    }
+  },
+  {
+    "biomarker": "Bilirubin, total",
+    "units": [
+      " mg/dL",
+      " μmol/L",
+      " μg/dL"
+    ],
+    "normalRanges": {
+      " mg/dL": "0.5-1.23",
+      " μmol/L": "8.55-21",
+      " μg/dL": "500-1230"
+    }
+  },
+  {
+    "biomarker": "Blood urea nitrogen (BUN)",
+    "units": [
+      " mg/dL",
+      " mmol/L",
+      " g/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "7.28-20.44",
+      " mmol/L": "2.6-7.3",
+      " g/L": "0.07-0.2"
+    }
+  },
+  {
+    "biomarker": "C-reactive protein (CRP)",
+    "units": [
+      " mg/L",
+      " μg/mL",
+      " nmol/L"
+    ],
+    "normalRanges": {
+      " mg/L": "0-8",
+      " μg/mL": "0-0.008",
+      " nmol/L": "0-0.8"
+    }
+  },
+  {
+    "biomarker": "Calcium (Ca2+)",
+    "units": [
+      " mg/dL",
+      " mmol/L",
+      " mEq/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "8.62-10.02",
+      " mmol/L": "2.15-2.5",
+      " mEq/L": "2.2-2.6"
+    }
+  },
+  {
+    "biomarker": "Carbon dioxide (CO2)",
+    "units": [
+      " mmol/L",
+      " mEq/L",
+      " mg/dL"
+    ],
+    "normalRanges": {
+      " mmol/L": "22-29",
+      " mEq/L": "22-29",
+      " mg/dL": "10-30"
+    }
+  },
+  {
+    "biomarker": "Chloride (Cl-)",
+    "units": [
+      " mmol/L",
+      " mEq/L",
+      " mmol/mL"
+    ],
+    "normalRanges": {
+      " mmol/L": "98-107",
+      " mEq/L": "98-107",
+      " mmol/mL": "0.098-0.107 "
+    }
+  },
+  {
+    "biomarker": "Cholesterol",
+    "units": [
+      " mg/dL",
+      " mmol/L",
+      " g/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "116.01-239.75",
+      " mmol/L": "3-6.2",
+      " g/L": "0.11601-0.23975"
+    }
+  },
+  {
+    "biomarker": "Creatine kinase total (CK)",
+    "units": [
+      " U/L",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " U/L": "39-308",
+      " IU/L": "39-308",
+      " μkat/L": "0.652-5.140"
+    }
+  },
+  {
+    "biomarker": "Creatinine",
+    "units": [
+      " mg/dL",
+      " μmol/L",
+      " mg/100 mL"
+    ],
+    "normalRanges": {
+      " mg/dL": "0.7-1.2",
+      " μmol/L": "62-106",
+      " mg/100 mL": "0.7-1.2"
+    }
+  },
+  {
+    "biomarker": "Eosinophils",
+    "units": [
+      "%",
+      "absolute count/μL",
+      "cells/L"
+    ],
+    "normalRanges": {
+      "%": "1-6",
+      "absolute count/μL": "30-350",
+      "cells/L": "30000-350000"
+    }
+  },
+  {
+    "biomarker": "Ferritin",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " pmol/L"
+    ],
+    "normalRanges": {
+      " ng/mL": "24-336",
+      " μg/L": "24-336",
+      " pmol/L": "53.93-755.06"
+    }
+  },
+  {
+    "biomarker": "Fibrinogen",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " g/dL"
+    ],
+    "normalRanges": {
+      " mg/dL": "180-350",
+      " g/L": "1.8-3.5",
+      " g/dL": "0.18-0.35"
+    }
+  },
+  {
+    "biomarker": "Gamma-glutamyl transferase (GGT)",
+    "units": [
+      " U/L",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " U/L": "8-61",
+      " IU/L": "8-61",
+      " μkat/L": "0.134-1.017"
+    }
+  },
+  {
+    "biomarker": "Glucose",
+    "units": [
+      " mg/dL",
+      " mmol/L",
+      " g/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "74.06-106.14",
+      " mmol/L": "4.11-5.89",
+      " g/L": "0.79-0.96"
+    }
+  },
+  {
+    "biomarker": "Hematocrit (Hct)",
+    "units": [
+      " %",
+      " cL/L",
+      " L/L"
+    ],
+    "normalRanges": {
+      " %": "38.3-48.6",
+      " cL/L": "38.3-48.6",
+      " L/L": "0.38-0.49"
+    }
+  },
+  {
+    "biomarker": "Hemoglobin (Hb)",
+    "units": [
+      " g/dL",
+      " g/L",
+      " mmol/L"
+    ],
+    "normalRanges": {
+      " g/dL": "13-16",
+      " g/L": "130-160",
+      " mmol/L": "8.07-9.94"
+    }
+  },
+  {
+    "biomarker": "High-density lipoprotein (HDL) cholesterol",
+    "units": [
+      " mg/dL",
+      " mmol/L",
+      " g/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "34.8-92.81",
+      " mmol/L": "0.9-2.4",
+      " g/L": "0.348-0.9281"
+    }
+  },
+  {
+    "biomarker": "Low-density lipoprotein (LDL) cholesterol",
+    "units": [
+      " mg/dL",
+      " mmol/L",
+      " g/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "0-127.61",
+      " mmol/L": "0-2.2",
+      " g/L": "0-1.2761"
+    }
+  },
+  {
+    "biomarker": "Insulin",
+    "units": [
+      " μIU/mL",
+      " mU/L",
+      " pmol/L"
+    ],
+    "normalRanges": {
+      " μIU/mL": "2-12",
+      " mU/L": "2-12",
+      " pmol/L": "12-72"
+    }
+  },
+  {
+    "biomarker": "Iron",
+    "units": [
+      " μg/dL",
+      " μmol/L",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " μg/dL": "32.39-192.68",
+      " μmol/L": "5.8-34.5",
+      " μg/L": "323.9-1926.8"
+    }
+  },
+  {
+    "biomarker": "Lactate dehydrogenase (LDH)",
+    "units": [
+      " U/L",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " U/L": "122-222",
+      " IU/L": "122-222",
+      " μkat/L": "2.0374-3.7104"
+    }
+  },
+  {
+    "biomarker": "Lymphocytes",
+    "units": [
+      " ×10⁹/L",
+      " ×10³/μL",
+      " units/μL"
+    ],
+    "normalRanges": {
+      " ×10⁹/L": "0.8-5",
+      " ×10³/μL": "0.8-5",
+      " units/μL": "800-5000"
+    }
+  },
+  {
+    "biomarker": "Mean corpuscular hemoglobin (MCH)",
+    "units": [
+      " pg"
+    ],
+    "normalRanges": {
+      " pg/cell": "27-33"
+    }
+  },
+  {
+    "biomarker": "Mean corpuscular hemoglobin concentration (MCHC)",
+    "units": [
+      " g/dL",
+      " g/L",
+      " %"
+    ],
+    "normalRanges": {
+      " g/dL": "32-36",
+      " g/L": "320-360",
+      " %": "32-36"
+    }
+  },
+  {
+    "biomarker": "Mean corpuscular volume (MCV)",
+    "units": [
+      " fL"
+    ],
+    "normalRanges": {
+      " fL": "76-96"
+    }
+  },
+  {
+    "biomarker": "Monocytes",
+    "units": [
+      " ×10⁹/L",
+      " ×10³/μL",
+      " units/μL"
+    ],
+    "normalRanges": {
+      " ×10⁹/L": "0.2-0.95",
+      " ×10³/μL": "0.2-0.95",
+      " units/μL": "200-950"
+    }
+  },
+  {
+    "biomarker": "Neutrophils",
+    "units": [
+      " ×10⁹/L",
+      " ×10³/μL",
+      " units/μL"
+    ],
+    "normalRanges": {
+      " ×10⁹/L": "1.5-8",
+      " ×10³/μL": "1.5-8",
+      " units/μL": "1500-8000"
+    }
+  },
+  {
+    "biomarker": "Phosphorus",
+    "units": [
+      " mg/dL",
+      " mmol/L",
+      " g/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "2.51-4.5",
+      " mmol/L": "0.81-1.45",
+      " g/L": "0.0251-0.045"
+    }
+  },
+  {
+    "biomarker": "Platelet count",
+    "units": [
+      "platelets/μL",
+      "platelets/L",
+      "x10⁹/L"
+    ],
+    "normalRanges": {
+      "platelets/μL": "150000-450000",
+      "platelets/L": "150-450",
+      "x10⁹/L": "135-317"
+    }
+  },
+  {
+    "biomarker": "Potassium (K+)",
+    "units": [
+      "mmol/L",
+      "mEq/L",
+      "mg/dL"
+    ],
+    "normalRanges": {
+      "mmol/L": "3.5-5.2",
+      "mEq/L": "3.5-5.2",
+      "mg/dL": "2.8-4.0"
+    }
+  },
+  {
+    "biomarker": "Prostate-specific antigen, total",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0-1.4",
+      " μg/L": "0-1.4",
+      " ng/dL": "0-14"
+    }
+  },
+  {
+    "biomarker": "Prostate-specific antigen, free",
+    "units": [
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0.04-0.5"
+    }
+  },
+  {
+    "biomarker": "Red blood cell count (RBC)",
+    "units": [
+      " units/μL",
+      " ×10¹²/L",
+      " ×10⁶/μL"
+    ],
+    "normalRanges": {
+      " units/μL": "4000000-5000000",
+      " ×10¹²/L": "4-5",
+      " ×10⁶/μL": "4-5"
+    }
+  },
+  {
+    "biomarker": "Sodium (Na+)",
+    "units": [
+      " mmol/L",
+      " mEq/L",
+      " mg/dL"
+    ],
+    "normalRanges": {
+      " mmol/L": "136-145",
+      " mEq/L": "136-145",
+      " mg/dL": "3.52-3.98"
+    }
+  },
+  {
+    "biomarker": "Total protein",
+    "units": [
+      " g/dL",
+      " g/L",
+      " mg/L"
+    ],
+    "normalRanges": {
+      " g/dL": "6.1-8.1",
+      " g/L": "61-81",
+      " mg/L": "6100-8100"
+    }
+  },
+  {
+    "biomarker": "Transferrin",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "200-370",
+      " g/L": "2-3.7",
+      " μmol/L": "25.12-46.47"
+    }
+  },
+  {
+    "biomarker": "Triglycerides",
+    "units": [
+      " mg/dL",
+      " mmol/L",
+      " g/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "0-177",
+      " mmol/L": "0-0.2",
+      " g/L": "0-1.99"
+    }
+  },
+  {
+    "biomarker": "Uric acid",
+    "units": [
+      " mg/dL",
+      " μmol/L",
+      " mg/100 mL"
+    ],
+    "normalRanges": {
+      " mg/dL": "3.4-7",
+      " μmol/L": "202.3-416.5",
+      " mg/100 mL": "3.4-7"
+    }
+  },
+  {
+    "biomarker": "White blood cell count (WBC)",
+    "units": [
+      " units/μL",
+      " x10³/μL",
+      " x10⁹/L"
+    ],
+    "normalRanges": {
+      " units/μL": "4000-9000",
+      " x10³/μL": "4-9",
+      " x10⁹/L": "4-9"
+    }
+  },
+  {
+    "biomarker": "Adrenocorticotropic hormone (ACTH)",
+    "units": [
+      "pg/mL",
+      "pmol/L",
+      "ng/L"
+    ],
+    "normalRanges": {
+      "pg/mL": "7.2-63.3",
+      "pmol/L": "1.58-13.96",
+      "ng/L": "7.2-63.3"
+    }
+  },
+  {
+    "biomarker": "Alanine aminotransferase (ALT)",
+    "units": [
+      " U/L",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " U/L": "14-37",
+      " IU/L": "14-37",
+      " μkat/L": "0.23-0.62"
+    }
+  },
+  {
+    "biomarker": "Aldosterone (serum)",
+    "units": [
+      "ng/dL",
+      "pg/mL",
+      "ng/L"
+    ],
+    "normalRanges": {
+      "ng/dL": "0-31",
+      "pg/mL": "0-310",
+      "ng/L": "0-31000"
+    }
+  },
+  {
+    "biomarker": "Alpha-1 antitrypsin",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "100-190",
+      " g/L": "1-1.9",
+      " μmol/L": "18.4-34.96"
+    }
+  },
+  {
+    "biomarker": "Anti-Mullerian hormone (AMH)",
+    "units": [
+      "ng/mL",
+      "pmol/L",
+      "ng/dL"
+    ],
+    "normalRanges": {
+      "ng/mL": "0.7-19",
+      "pmol/L": "5-135.72",
+      "ng/dL": "7-190"
+    }
+  },
+  {
+    "biomarker": "Antithrombin III",
+    "units": [
+      " %"
+    ],
+    "normalRanges": {
+      " %": "76-128"
+    }
+  },
+  {
+    "biomarker": "Apolipoprotein A1 (Apo A1)",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "104-202",
+      " g/L": "1.04-2.02",
+      " μmol/L": "37.13-72.11"
+    }
+  },
+  {
+    "biomarker": "Apolipoprotein B (Apo B)",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "0-1.20",
+      " g/L": "0-1.2",
+      " μmol/L": "0-0.234"
+    }
+  },
+  {
+    "biomarker": "Brain natriuretic peptide (BNP)",
+    "units": [
+      " pg/mL"
+    ],
+    "normalRanges": {
+      " pg/mL": "0-100"
+    }
+  },
+  {
+    "biomarker": "Calcitonin",
+    "units": [
+      " pg/mL"
+    ],
+    "normalRanges": {
+      " pg/mL": "0-14.3"
+    }
+  },
+  {
+    "biomarker": "Carcinoembryonic antigen (CEA)",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " U/mL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0-2.5",
+      " μg/L": "0-2.5",
+      " U/mL": "0-2.5"
+    }
+  },
+  {
+    "biomarker": "Cholinesterase (pseudo) total",
+    "units": [
+      " IU/L"
+    ],
+    "normalRanges": {
+      " IU/L": "5320-12920"
+    }
+  },
+  {
+    "biomarker": "Complement C3",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "88-201",
+      " g/L": "0.88-2.01",
+      " μmol/L": "880-2010"
+    }
+  },
+  {
+    "biomarker": "Complement C4",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "10-40",
+      " g/L": "0.1-0.4",
+      " μmol/L": "0.10-0.40"
+    }
+  },
+  {
+    "biomarker": "Cortisol",
+    "units": [
+      "μg/dL",
+      "nmol/L",
+      "μg/L"
+    ],
+    "normalRanges": {
+      "μg/dL": "5-23",
+      "nmol/L": "138-635",
+      "μg/L": "50-230"
+    }
+  },
+  {
+    "biomarker": "Creatine kinase-MB (CK-MB)",
+    "units": [
+      " U/L",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " U/L": "0-25",
+      " IU/L": "0-25",
+      " μkat/L": "0-0.4167"
+    }
+  },
+  {
+    "biomarker": "D-dimer",
+    "units": [
+      "μg/mL",
+      "ng/mL",
+      "μg/L"
+    ],
+    "normalRanges": {
+      "μg/mL": "0-0.5",
+      "ng/mL": "0-500",
+      "μg/L": "0-500"
+    }
+  },
+  {
+    "biomarker": "Dehydroepiandrosterone sulfate (DHEAS)",
+    "units": [
+      " μg/dL",
+      " μmol/L",
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " μg/dL": "105-728",
+      " μmol/L": "2.85-19.76",
+      " ng/mL": "0.00285-0.01976"
+    }
+  },
+  {
+    "biomarker": "Erythrocyte sedimentation rate (ESR)",
+    "units": [
+      " mm/hr"
+    ],
+    "normalRanges": {
+      " mm/hr": "0-15"
+    }
+  },
+  {
+    "biomarker": "Estradiol",
+    "units": [
+      " pg/mL",
+      " pmol/L",
+      " ng/L"
+    ],
+    "normalRanges": {
+      " pg/mL": "10-40",
+      " pmol/L": "36.7-146.8",
+      " ng/L": "10-40"
+    }
+  },
+  {
+    "biomarker": "Follicle-stimulating hormone (FSH)",
+    "units": [
+      " mIU/mL",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " mIU/mL": "1.5-12.4",
+      " IU/L": "1.5-12.4",
+      " μkat/L": "0.025-0.207"
+    }
+  },
+  {
+    "biomarker": "Free thyroxine (FT4)",
+    "units": [
+      " ng/dL",
+      " pmol/L",
+      " pg/mL"
+    ],
+    "normalRanges": {
+      " ng/dL": "0.8-1.8",
+      " pmol/L": "10.3-23.17",
+      " pg/mL": "8-18"
+    }
+  },
+  {
+    "biomarker": "Gamma-glutamyl transferase (GGT)",
+    "units": [
+      "U/L",
+      "IU/L",
+      "μkat/L"
+    ],
+    "normalRanges": {
+      "U/L": "8-61",
+      "IU/L": "8-61",
+      "μkat/L": "0.133-1.017"
+    }
+  },
+  {
+    "biomarker": "Glomerular filtration rate (GFR)",
+    "units": [
+      " mL/min/1.73m²"
+    ],
+    "normalRanges": {
+      " mL/min/1.73m²": "90-Infinity"
+    }
+  },
+  {
+    "biomarker": "Growth hormone",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0.05-3",
+      " μg/L": "0.05-3",
+      " ng/dL": "0.5-30"
+    }
+  },
+  {
+    "biomarker": "Hemoglobin A1c (HbA1c)",
+    "units": [
+      " %",
+      " L/L",
+      " mg/dL"
+    ],
+    "normalRanges": {
+      " %": "4-5.7",
+      " L/L": "0.04-0.06",
+      " mg/dL": "20.0-39.9"
+    }
+  },
+  {
+    "biomarker": "Homocysteine",
+    "units": [
+      " μmol/L",
+      " nmol/mL",
+      " mg/dL"
+    ],
+    "normalRanges": {
+      " μmol/L": "6.2-11",
+      " nmol/mL": "6.2-11",
+      " mg/dL": "0.56-0.99"
+    }
+  },
+  {
+    "biomarker": "Immunoglobulin A (IgA)",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "61-356",
+      " g/L": "0.61-3.56",
+      " μmol/L": "3.81-22.25"
+    }
+  },
+  {
+    "biomarker": "Immunoglobulin E (IgE)",
+    "units": [
+      " IU/mL",
+      " kU/L",
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-214",
+      " kU/L": "0-214",
+      " ng/mL": "0-513.6"
+    }
+  },
+  {
+    "biomarker": "Immunoglobulin G (IgG)",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "767-1590",
+      " g/L": "7.67-15.9",
+      " μmol/L": "51.16-106.05"
+    }
+  },
+  {
+    "biomarker": "Immunoglobulin M (IgM)",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "37-286",
+      " g/L": "0.37-2.86",
+      " μmol/L": "0.38-2.95"
+    }
+  },
+  {
+    "biomarker": "International Normalized Ratio (INR)",
+    "units": [
+      " ratio"
+    ],
+    "normalRanges": {
+      " ratio": "0.9-1.1"
+    }
+  },
+  {
+    "biomarker": "Interleikin-6 (IL-6)",
+    "units": [
+      " pg/mL"
+    ],
+    "normalRanges": {
+      " pg/mL": "0.3-2.4"
+    }
+  },
+  {
+    "biomarker": "Leptin",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/mL": "2-5.6",
+      " μg/L": "2-5.6",
+      " ng/dL": "0.2-0.56"
+    }
+  },
+  {
+    "biomarker": "Lipase",
+    "units": [
+      " U/L",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " U/L": "13-60",
+      " IU/L": "13-60",
+      " μkat/L": "0.2167-1.000"
+    }
+  },
+  {
+    "biomarker": "Mean platelet volume (MPV)",
+    "units": [
+      " fL"
+    ],
+    "normalRanges": {
+      " fL": "9-12"
+    }
+  },
+  {
+    "biomarker": "B-Type Natriuretic peptide",
+    "units": [
+      " pg/mL"
+    ],
+    "normalRanges": {
+      " pg/mL": "0-100"
+    }
+  },
+  {
+    "biomarker": "Parathyroid hormone (PTH)",
+    "units": [
+      " pg/mL",
+      " ng/L",
+      " pmol/L"
+    ],
+    "normalRanges": {
+      " pg/mL": "15-65",
+      " ng/L": "0.015-0.065",
+      " pmol/L": "1.59-6.89"
+    }
+  },
+  {
+    "biomarker": "Plasminogen activity",
+    "units": [
+      " %"
+    ],
+    
+    "normalRanges": {
+      " %": "71-144"
+    }
+  },
+  {
+    "biomarker": "Prolactin",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/mL": "4-15.2",
+      " μg/L": "4-15.2",
+      " ng/dL": "0.4-1.52"
+    }
+  },
+  {
+    "biomarker": "Prothrombin time (PT)",
+    "units": [
+      " seconds"
+    ],
+    "normalRanges": {
+      " seconds": "9.4-12.5"
+    }
+  },
+  {
+    "biomarker": "Prothrombin index",
+    "units": [
+      " %"
+    ],
+    "normalRanges": {
+      " %": "90-105"
+    }
+  },
+  {
+    "biomarker": "Renin direct",
+    "units": [
+      " pg/mL"
+    ],
+    "normalRanges": {
+      " pg/mL": "2.5-45.7"
+    }
+  },
+  {
+    "biomarker": "Sex hormone-binding globulin (SHBG)",
+    "units": [
+      " nmol/L"
+    ],
+    "normalRanges": {
+      " nmol/L": "18.3-54.1"
+    }
+  },
+  {
+    "biomarker": "Soluble transferrin receptor (sTfR)",
+    "units": [
+      " mg/L"
+    ],
+    "normalRanges": {
+      " mg/L": "2.2-5"
+    }
+  },
+  {
+    "biomarker": "Total Testosterone",
+    "units": [
+      " ng/dL",
+      " nmol/L",
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " ng/dL": "240-950",
+      " nmol/L": "8.33-32.96",
+      " ng/mL": "2.4-9.5"
+    }
+  },
+  {
+    "biomarker": "Thrombin time (TT)",
+    "units": [
+      " seconds"
+    ],
+    "normalRanges": {
+      " seconds": "14-21"
+    }
+  },
+  {
+    "biomarker": "Thyroglobulin",
+    "units": [
+      " IU/mL",
+      " kIU/L",
+      " U/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-4",
+      " kIU/L": "0-4",
+      " U/mL": "0-0.004"
+    }
+  },
+  {
+    "biomarker": "Thyroid-stimulating hormone (TSH)",
+    "units": [
+      " mIU/L",
+      " mU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " mIU/L": "0.4-4.5",
+      " mU/L": "0.4-4.5",
+      " μkat/L": "0.024-0.270"
+    }
+  },
+  {
+    "biomarker": "Total Thyroxine",
+    "units": [
+      " μg/dL",
+      " nmol/L",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " μg/dL": "4.9-11.7",
+      " nmol/L": "63.07-150.6",
+      " μg/L": "0.6307-1.506"
+    }
+  },
+  {
+    "biomarker": "Total iron-binding capacity (TIBC)",
+    "units": [
+      " μg/dL",
+      " μmol/L",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " μg/dL": "240-450",
+      " μmol/L": "42.98-80.6",
+      " μg/L": "2.4298-4.06"
+    }
+  },
+  {
+    "biomarker": "Total triiodothyronine (T3)",
+    "units": [
+      " ng/dL",
+      " nmol/L",
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " ng/dL": "80-200",
+      " nmol/L": "1.23-3.07",
+      " ng/mL": "0.8-2"
+    }
+  },
+  {
+    "biomarker": "Transferrin saturation",
+    "units": [
+      " %"
+    ],
+    "normalRanges": {
+      " %": "20-50"
+    }
+  },
+  {
+    "biomarker": "Troponin I",
+    "units": [
+      " ng/mL",
+      " ng/L",
+      " ng/L"
+    ],
+    "normalRanges": {
+      " ng/mL": "0-0.04",
+      " ng/L": "0-40"
+    }
+  },
+  {
+    "biomarker": "Blood Urea",
+    "units": [
+      " mg/dL",
+      " mmol/L",
+      " mg/100 mL"
+    ],
+    "normalRanges": {
+      " mg/dL": "15.62-43.84",
+      " mmol/L": "2.6-7.3",
+      " mg/100 mL": "15.62-43,84"
+    }
+  },
+  {
+    "biomarker": "von Willebrand factor (vWF)",
+    "units": [
+      " %"
+    ],
+    "normalRanges": {
+      " %": "52-214"
+    }
+  },
+  {
+    "biomarker": "Zinc",
+    "units": [
+      " μg/dL",
+      " μmol/L",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " μg/dL": "55-150",
+      " μmol/L": "8.42-22.95",
+      " μg/L": "550-1500"
+    }
+  },
+  {
+    "biomarker": "17-hydroxyprogesterone",
+    "units": [
+      " ng/dL",
+      " nmol/L",
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " ng/dL": "0-139",
+      " nmol/L": "0-4.4",
+      " ng/mL": "0-1.39"
+    }
+  },
+  {
+    "biomarker": "25-hydroxyvitamin D3",
+    "units": [
+      " ng/mL",
+      " nmol/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/mL": "30-50",
+      " nmol/L": "74.88-124.8",
+      " ng/dL": "7.488-12.48"
+    }
+  },
+  {
+    "biomarker": "8-hydroxy-2'-deoxyguanosine (8-OHdG)",
+    "units": [
+      " ng/L",
+      " ng/mL",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/L": "100-300",
+      " ng/mL": "0.1-0.3",
+      " ng/dL": "1-3"
+    }
+  },
+  {
+    "biomarker": "Adiponectin",
+    "units": [
+      " μg/mL"
+    ],
+    "normalRanges": {
+      " μg/mL": "4-26"
+    }
+  },
+  {
+    "biomarker": "Angiotensin-converting enzyme (ACE)",
+    "units": [
+      " U/L"
+    ],
+    "normalRanges": {
+      " U/L": "14-82"
+    }
+  },
+  {
+    "biomarker": "Cyclic citrullinated peptide antibodies lgG",
+    "units": [
+      " U/mL",
+      " IU/mL",
+      " μg/mL"
+    ],
+    "normalRanges": {
+      " U/mL": "0-3",
+      " IU/mL": "0-3",
+      " μg/mL": "0-3000"
+    }
+  },
+  {
+    "biomarker": "Double-stranded DNA antibodies lgG",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-5"
+    }
+  },
+  {
+    "biomarker": "Anti-nuclear antibodies (ANA)",
+    "units": [
+      " Titer denominator (1:x)"
+    ],
+    "normalRanges": {
+      " Titer denominator (1:x)": "0-80"
+    }
+  },
+  {
+    "biomarker": "SS-A (Ro52) antibodies lgG",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-30"
+    }
+  },
+  {
+    "biomarker": "Sm antibodies lgG",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-30"
+    }
+  },
+  {
+    "biomarker": "SSB (La) antibodies",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-30"
+    }
+  },
+  {
+    "biomarker": "Thyroglobulin antibody",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-4"
+    }
+  },
+  {
+    "biomarker": "Thyroid peroxidase antibody",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-9"
+    }
+  },
+  {
+    "biomarker": "Beta-2 microglobulin",
+    "units": [
+      " mg/L",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " mg/L": "1.21-2.7",
+      " μg/L": "1.21-2.7"
+    }
+  },
+  {
+    "biomarker": "Calcium ionized",
+    "units": [
+      "mmol/L",
+      "mEq/L",
+      "mg/dL"
+    ],
+    "normalRanges": {
+      "mmol/L": "1.21-1.38",
+      "mEq/L": "2.42-2.76",
+      "mg/dL": "4.83-5.52"
+    }
+  },
+  {
+    "biomarker": "Carbohydrate antigen 19-9 (CA 19-9)",
+    "units": [
+      " U/mL",
+      " IU/mL",
+      " kIU/L"
+    ],
+    "normalRanges": {
+      " U/mL": "0-34",
+      " IU/mL": "0-34",
+      " kIU/L": "0-34"
+    }
+  },
+  {
+    "biomarker": "Carcinoembriotic antigen",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " U/mL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0-2.5",
+      " μg/L": "0-2.5",
+      " U/mL": "0-2.5"
+    }
+  },
+  {
+    "biomarker": "Total Carnitine",
+    "units": [
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " μmol/L": "50-60"
+    }
+  },
+  {
+    "biomarker": "Complement C1q",
+    "units": [
+      " mg/dL",
+      " μg/mL",
+      " mg/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "10.9-24.2",
+      " μg/mL": "109-242",
+      " mg/L": "109-242"
+    }
+  },
+  {
+    "biomarker": "Copper",
+    "units": [
+      " μg/dL",
+      " μmol/L",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " μg/dL": "75-145",
+      " μmol/L": "11.8-22.82",
+      " μg/L": "750-1450"
+    }
+  },
+  {
+    "biomarker": "C-peptide",
+    "units": [
+      " ng/mL",
+      " pmol/L",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " ng/mL": "1.1-4.4",
+      " pmol/L": "364.2-1456.81",
+      " μg/L": "1.1-4.4"
+    }
+  },
+  {
+    "biomarker": "11--Deoxycorticosterone",
+    "units": [
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/dL": "0-10"
+    }
+  },
+  {
+    "biomarker": "11-Deoxycortisol",
+    "units": [
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/dL": "0-50"
+    }
+  },
+  {
+    "biomarker": "Pepsinogen I",
+    "units": [
+      " ng/mL",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " ng/mL": "30-160",
+      " μg/L": "30-160"
+    }
+  },
+  {
+    "biomarker": "Vitaminn B9 (Folate)",
+    "units": [
+      " ng/mL",
+      " nmol/L",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " ng/mL": "2-20",
+      " nmol/L": "4.53-45.31",
+      " μg/L": "2-20"
+    }
+  },
+  {
+    "biomarker": "Cortisol Evening",
+    "units": [
+      " μg/dL",
+      " nmol/L",
+      " μg/dL"
+    ],
+    "normalRanges": {
+      " μg/dL": "2.3-11.9",
+      " nmol/L": "63.45-328.27"
+    }
+  },
+  {
+    "biomarker": "Free Triiodothyronine (FT3)",
+    "units": [
+      " pg/mL",
+      " pmol/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " pg/mL": "2.8-4.3",
+      " pmol/L": "4.3-6.6",
+      " ng/dL": "0.28-0.43"
+    }
+  },
+  {
+    "biomarker": "Glomerular filtration rate (GFR) estimated",
+    "units": [
+      " mL/min/1.73m²"
+    ],
+    "normalRanges": {
+      " mL/min/1.73m²": "90-Infinity"
+    }
+  },
+  {
+    "biomarker": "Glutamine",
+    "units": [
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " μmol/L": "390-700"
+    }
+  },
+  {
+    "biomarker": "Haptoglobin",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " g/dL"
+    ],
+    "normalRanges": {
+      " mg/dL": "30-200",
+      " g/L": "0.3-2",
+      " g/dL": "0.03-0.2"
+    }
+  },
+  {
+    "biomarker": "Hepatitis A antibodies total",
+    "units": [
+      " IU/L"
+    ],
+    "normalRanges": {
+      " IU/L": "0-20"
+    }
+  },
+  {
+    "biomarker": "Hepatitis B surface antibodies total",
+    "units": [
+      " IU/L"
+    ],
+    "normalRanges": {
+      " IU/L": "0-10"
+    }
+  },
+  {
+    "biomarker": "Hepatitis C viral RNA, quantitative realtime",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-15"
+    }
+  },
+  {
+    "biomarker": "Heterophile antibodies",
+    "units": [
+      " IU/mL"
+    ]
+  },
+  {
+    "biomarker": "High-sensitivity C-reactive protein (hs-CRP)",
+    "units": [
+      " mg/L"
+    ],
+    "normalRanges": {
+      " mg/L": "0-1.1"
+    }
+  },
+  {
+    "biomarker": "Human chorionic gonadotropin (hCG)",
+    "units": [
+      " mIU/mL",
+      " IU/L",
+      " μkat/L"
+    ]
+  },
+  {
+    "biomarker": "Human papillomavirus (HPV) DNA",
+    "units": [
+      " copies/mL"
+    ]
+  },
+  {
+    "biomarker": "Insulin-like growth factor 1 (IGF-1)",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " nmol/L"
+    ],
+    "normalRanges": {
+      " ng/mL": "66-346",
+      " μg/L": "66-346",
+      " nmol/L": "8.63-45.22"
+    }
+  },
+  {
+    "biomarker": "Insulin-like growth factor-binding protein 3 (IGFBP-3)",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " μg/mL"
+    ],
+    "normalRanges": {
+      " ng/mL": "2404-5948",
+      " μg/L": "2404-5948",
+      " μg/mL": "2.4-5.95"
+    }
+  },
+  {
+    "biomarker": "Intact parathyroid hormone (iPTH)",
+    "units": [
+      " pg/mL",
+      " ng/L",
+      " pmol/L"
+    ],
+    "normalRanges": {
+      " pg/mL": "15-65",
+      " ng/L": "15-65",
+      " pmol/L": "1.59-6.89"
+    }
+  },
+  {
+    "biomarker": "Lactate (plasma)",
+    "units": [
+      " mmol/L"
+    ],
+    "normalRanges": {
+      " mmol/L": "1.0"
+    }
+  },
+  {
+    "biomarker": "Leptin",
+    "units": [
+      " ng/mL",
+      " μg/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/mL": "2-5.6",
+      " μg/L": "2-5.6",
+      " ng/dL": "20-56"
+    }
+  },
+  {
+    "biomarker": "Lipoprotein(a) [Lp(a)]",
+    "units": [
+      " mg/dL",
+      " g/L",
+      " nmol/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "0-30",
+      " g/L": "0-0.3",
+      " nmol/L": "0-75"
+    }
+  },
+  {
+    "biomarker": "Luteinizing hormone (LH)",
+    "units": [
+      " mIU/mL",
+      " IU/L",
+      " μkat/L"
+    ],
+    "normalRanges": {
+      " mIU/mL": "1.7-8.6",
+      " IU/L": "1.7-8.6",
+      " μkat/L": "0.102-0.516"
+    }
+  },
+  {
+    "biomarker": "Magnesium (Mg2+)",
+    "units": [
+      " mg/dL",
+      " mmol/L",
+      " mEq/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "1.46-2.6",
+      " mmol/L": "0.6-1.07",
+      " mEq/L": "1.2-2.14"
+    }
+  },
+  {
+    "biomarker": "Matrix metalloproteinase-9 (MMP-9)",
+    "units": [
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " ng/mL": "3-41"
+    }
+  },
+  {
+    "biomarker": "Methylmalonic acid (MMA)",
+    "units": [
+      " μmol/L",
+      " nmol/L",
+      " nmol/mL"
+    ],
+    "normalRanges": {
+      " μmol/L": "0-0.4",
+      " nmol/L": "0-400",
+      " nmol/mL": "0-0.4"
+    }
+  },
+  {
+    "biomarker": "Myeloperoxidase antibodies",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-20"
+    }
+  },
+  {
+    "biomarker": "Neuron-specific enolase (NSE)",
+    "units": [
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0-15"
+    }
+  },
+  {
+    "biomarker": "Osmolality",
+    "units": [
+      " mOsm/kg",
+      " mmol/kg",
+      " mOsm/L"
+    ],
+    "normalRanges": {
+      " mOsm/kg": "275-295",
+      " mmol/kg": "275-295",
+      " mOsm/L": "275-295"
+    }
+  },
+  {
+    "biomarker": "Phospholipase A2 (PLA2)",
+    "units": [
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0-200"
+    }
+  },
+  {
+    "biomarker": "Urine Porphobilinogen (PBG)",
+    "units": [
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " μmol/L": "0-8.8"
+    }
+  },
+  {
+    "biomarker": "Procalcitonin",
+    "units": [
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0-0.5"
+    }
+  },
+  {
+    "biomarker": "Progesterone",
+    "units": [
+      " ng/mL",
+      " nmol/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0.2-1.4",
+      " nmol/L": "0.73-5.14",
+      " ng/dL": "2-14"
+    }
+  },
+  {
+    "biomarker": "Macroprolactin",
+    "units": [
+      " %"
+    ],
+    "normalRanges": {
+      " %": "50-Infinity"
+    }
+  },
+  {
+    "biomarker": "Protein S activity",
+    "units": [
+      " %"
+    ],
+    "normalRanges": {
+      " %": "66-143"
+    }
+  },
+  {
+    "biomarker": "Rheumatoid factor (RF)",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-14"
+    }
+  },
+  {
+    "biomarker": "Reverse Triiodothyronine",
+    "units": [
+      " ng/dL",
+      " nmol/L",
+      " pmol/L"
+    ],
+    "normalRanges": {
+      " ng/dL": "9.8-24.7",
+      " nmol/L": "0.15-0.38",
+      " pmol/L": "150.53-379.39"
+    }
+  },
+  {
+    "biomarker": "Rubella antibodies",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-7"
+    }
+  },
+  {
+    "biomarker": "Somatostatin",
+    "units": [
+      " pg/mL",
+      " ng/L",
+      " pmol/L"
+    ],
+    "normalRanges": {
+      " pg/mL": "10-22",
+      " ng/L": "10000-22000",
+      " pmol/L": "4.26-9.37"
+    }
+  },
+  {
+    "biomarker": "Tau protein",
+    "units": [
+      " pg/mL"
+    ],
+    "normalRanges": {
+      " pg/mL": "80-450"
+    }
+  },
+  {
+    "biomarker": "Testosterone free",
+    "units": [
+      " pg/mL",
+      " pmol/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " pg/mL": "52.5-207",
+      " pmol/L": "182.18-718.29",
+      " ng/dL": "5.25-20.7"
+    }
+  },
+  {
+    "biomarker": "Testosterone bioavailable",
+    "units": [
+      " ng/dL",
+      " nmol/L",
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " ng/dL": "83-257",
+      " nmol/L": "2.88-8.92",
+      " ng/mL": "0.83-2.57"
+    }
+  },
+  {
+    "biomarker": "Thyroid peroxidase antibodies",
+    "units": [
+      " IU/mL",
+      " kIU/L",
+      " U/L"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-9",
+      " kIU/L": "0-9",
+      " U/L": "0-9"
+    }
+  },
+  {
+    "biomarker": "Tissue transglutaminase antibodies lgA",
+    "units": [
+      " IU/mL"
+    ],
+    "normalRanges": {
+      " IU/mL": "0-4"
+    }
+  },
+  {
+    "biomarker": "Soluble Transferrin receptor (sTfR)",
+    "units": [
+      " mg/L"
+    ],
+    "normalRanges": {
+      " mg/L": "2.2-5"
+    }
+  },
+  {
+    "biomarker": "Tumor necrosis factor-alpha plasma (TNF-α)",
+    "units": [
+      " pg/mL"
+    ],
+    "normalRanges": {
+      " pg/mL": "0-14.5"
+    }
+  },
+  {
+    "biomarker": "Urobilinogen (urine)",
+    "units": [
+      " mg/dL",
+      " μmol/L",
+      " mg/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "0.2-1",
+      " μmol/L": "3.37-16.87",
+      " mg/L": "2-10"
+    }
+  },
+  {
+    "biomarker": "Vascular endothelial growth factor (VEGF)",
+    "units": [
+      " pg/mL"
+    ],
+    "normalRanges": {
+      " pg/mL": "0-96.2"
+    }
+  },
+  {
+    "biomarker": "von Willebrand factor antigen (vWF Ag)",
+    "units": [
+      " %"
+    ],
+    "normalRanges": {
+      " %": "52-214"
+    }
+  },
+  {
+    "biomarker": "Zinc protoporphyrin (ZPP)",
+    "units": [
+      " μg/dL"
+    ],
+    "normalRanges": {
+      " μg/dL": "0-35"
+    }
+  },
+  {
+    "biomarker": "17-Hydroxypregnenolone",
+    "units": [
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/dL": "55-455"
+    }
+  },
+  {
+    "biomarker": "2,3-Diphosphoglycerate (2,3-DPG)",
+    "units": [
+      " μmol/g Hb",
+      " mmol/mol Hb",
+      " μmol/L"
+    ]
+  },
+  {
+    "biomarker": "8-Isoprostane (urine)",
+    "units": [
+      " pg/mL"
+    ],
+    "normalRanges": {
+      " pg/mL": "500-2000"
+    }
+  },
+  {
+    "biomarker": "Acetaminophen",
+    "units": [
+      " μg/mL"
+    ],
+    "normalRanges": {
+      " μg/mL": "10-20"
+    }
+  },
+  {
+    "biomarker": "Acid phosphatase, total (serum)",
+    "units": [
+      " IU/L"
+    ],
+    "normalRanges": {
+      " IU/L": "0-4.3"
+    }
+  },
+  {
+    "biomarker": "Adenosine deaminase (ADA)",
+    "units": [
+      " U/L"
+    ],
+    "normalRanges": {
+      " U/L": "0-40"
+    }
+  },
+  {
+    "biomarker": "Vitamin A",
+    "units": [
+      " μg/dL",
+      " μmol/L",
+      " mg/L"
+    ],
+    "normalRanges": {
+      " μg/dL": "30.1-81.7",
+      " μmol/L": "1.05-2.85",
+      " mg/L": "0.3-0.82"
+    }
+  },
+  {
+    "biomarker": "Vitamin B1 (Thiamine)",
+    "units": [
+      " μg/L",
+      " nmol/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " μg/L": "6.75-10.12",
+      " nmol/L": "20-30",
+      " ng/dL": "0.68-1.01"
+    }
+  },
+  {
+    "biomarker": "Vitamin B2 (Riboflavin)",
+    "units": [
+      " ng/mL",
+      " nmol/L",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " ng/mL": "1-19",
+      " nmol/L": "2.66-50.48",
+      " μg/L": "1-19"
+    }
+  },
+  {
+    "biomarker": "Vitamin B3 (Niacin)",
+    "units": [
+      " mcg/mL"
+    ],
+    "normalRanges": {
+      " mcg/mL": "0.5-8.45"
+    }
+  },
+  {
+    "biomarker": "Vitamin B6 (Pyridoxine)",
+    "units": [
+      " ng/mL",
+      " nmol/L",
+      " μg/L"
+    ],
+    "normalRanges": {
+      " ng/mL": "3.4-55",
+      " nmol/L": "20.09-325.05",
+      " μg/L": "3.4-55"
+    }
+  },
+  {
+    "biomarker": "Vitamin B7 (Biotin)",
+    "units": [
+      " pg/mL",
+      " nmol/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " pg/mL": "221-3004",
+      " nmol/L": "0.9-12.29",
+      " ng/dL": "2.21-30.04"
+    }
+  },
+  {
+    "biomarker": "Vitamin B12 (Cobalamin)",
+    "units": [
+      " pg/mL",
+      " pmol/L",
+      " ng/L"
+    ],
+    "normalRanges": {
+      " pg/mL": "200-900",
+      " pmol/L": "148-666",
+      " ng/L": "200-900"
+    }
+  },
+  {
+    "biomarker": "Vitamin C (Ascorbic acid)",
+    "units": [
+      " mg/dL",
+      " μmol/L",
+      " mg/L"
+    ],
+    "normalRanges": {
+      " mg/dL": "0.4-2",
+      " μmol/L": "22.71-113.56",
+      " mg/L": "4-20"
+    }
+  },
+  {
+    "biomarker": "Vitamin D (25-hydroxyvitamin D)",
+    "units": [
+      " ng/mL",
+      " nmol/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/mL": "30-50",
+      " nmol/L": "74.88-124.8",
+      " ng/dL": "7.488-12.48"
+    }
+  },
+  {
+    "biomarker": "Vitamin E (alpha-tocopherol)",
+    "units": [
+      " μg/mL",
+      " mg/L",
+      " μmol/L"
+    ],
+    "normalRanges": {
+      " μg/mL": "5-18",
+      " mg/L": "5-18",
+      " μmol/L": "11.61-41.79"
+    }
+  },
+  {
+    "biomarker": "Vitamin K1",
+    "units": [
+      " ng/mL",
+      " nmol/L",
+      " ng/dL"
+    ],
+    "normalRanges": {
+      " ng/mL": "0.1-2.2",
+      " nmol/L": "0.22-4.88",
+      " ng/dL": "1-22"
+    }
+  },
+  {
+    "biomarker": "Vitamin K2",
+    "units": [
+      " ng/mL"
+    ],
+    "normalRanges": {
+      " ng/mL": "37.8-498.6"
+    }
+  }
+]

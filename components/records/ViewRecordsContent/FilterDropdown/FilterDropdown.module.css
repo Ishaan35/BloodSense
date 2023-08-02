@@ -1,0 +1,22 @@
+.DropdownContainer{
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: #1f1f38;
+    top:100%;
+    transform:translate(-25%);
+    border-radius: 4px;
+}
+
+.DropdownItem{
+    padding: 8px;
+    padding-left: 15px;
+    transition: 0.1s;
+    color: white;
+}
+
+.DropdownItem:hover{
+    background-color: #0e0d18;
+}

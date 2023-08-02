@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300;400&display=swap');
+
+
+.MainContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        background-color: #fff0f0;
+}
+
+.IntroBox{
+    margin-top: 5vh;
+    padding: 3%;
+    padding-top: 10%;
+    background: rgb(255,115,115);
+    background: linear-gradient(90deg, rgba(255,115,115,1) 0%, rgba(217,55,55,1) 100%);
+    width: 90%;
+    max-width: 1350px;
+    min-height: 60vh;
+    border-radius: 25px;
+    position: relative;
+    color: white;
+    font-family: 'REM', sans-serif;
+    display: flex;
+}
+
+.LeftArticleIntroBox{
+    width: 50%;
+    padding-right: 5%;
+}
+.RightArticleIntroBox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.RightArticleIntroBox img{
+    margin-top: -50px;
+    margin-left: 50px;
+}
+.LeftArticleIntroBox > h1{
+    font-size: 50px;
+}
+.LeftArticleIntroBox > p{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.TopLogo{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 7vw;
+    width: 7vw;
+}
+
+.h1Body{
+    font-size: 50px;
+    color: rgb(52, 51, 67);
+}
+
+.VerticalColumn{
+    width: 88%;
+    max-width: 1350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.VerticalColumn > p{
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(52, 51, 67);
+}
+
+.TryOnDeskTop{
+    margin-bottom: 30px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid whitesmoke;
+    width: 220px;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.TryOnDeskTop:hover{
+    background-color: rgba(0,0,0,0.1);
+    
+}
+.TryOnDeskTop svg{
+    position: absolute;
+    right: 10%;
+    transform: scale(1.2);
+}
+
+
+.GooglePlayButton{
+    background: url("https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png") 0% 0% / contain no-repeat;
+    
+    height: 70px;
+    width: 200px;
+    margin-left: -10px;
+    cursor: pointer;
+}

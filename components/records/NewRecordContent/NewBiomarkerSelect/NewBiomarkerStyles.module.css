@@ -1,0 +1,118 @@
+.MainBox{
+    width: 100%;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 10vh;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px 0.5px #bfc4d6;
+
+}
+
+.newBiomarkerInputRows{
+    padding-top: 10px;
+    color: rgb(78, 78, 78);
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    
+}
+
+.newBiomarkerInputField{
+    border: 0.5px solid rgb(173, 180, 214);
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    padding: 2px;
+    padding-left: 5px;
+}
+
+.newBiomarkerSelectedMarker{
+    border: 0.5px solid rgb(207, 211, 228);
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 50px;
+    font-size: small;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-right: 10px;
+}
+
+.newBiomarkerInputField input{
+    height: 100%;
+    border: none;
+    outline: none;
+    width: 20vw;
+}
+
+.newBiomarkerInputField svg {
+    height: 100%;
+    width: 20px;
+    margin-right: 5px;
+    color: gray
+}
+
+.addBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cc3979;
+    padding: 5px;
+    width: 35%;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.1s
+}
+.addBtn:hover{
+    background-color: #a42e61;
+}
+
+.addBtnDisabled{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cc3979;
+    padding: 5px;
+    width: 35%;
+    color: white;
+    border-radius: 5px;
+    opacity: 0.5; /* Adjust the opacity to your preferred disabled appearance */
+    pointer-events: none;
+}
+
+.SelectBiomarkerContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+
+    .newBiomarkerInputField{
+        width: 20vw;
+
+    }
+
+    .SelectBiomarkerContainer{
+        flex-direction: column;
+        align-items: center;
+        max-width: 20vw;
+    }
+    .addBtn{
+        width: 50vw;
+    }
+    .addBtnDisabled{
+        width: 50vw;
+    }
+  }

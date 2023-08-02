@@ -1,0 +1,86 @@
+.sidebar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-right: 0px;
+    overflow-x: hidden;
+    padding-top: 40px;
+    border-right: 5px solid #f1f2f9;
+}
+
+
+
+.sidebarCloseButton{
+    position: absolute;
+    top: 0vh;
+    right: 0;
+    background: none;
+    outline: none;
+    color: #ee5d6e;
+    border: 1px solid rgb(229, 229, 229);
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebarCloseButton svg{
+    width: 35px;
+    height: 35px;
+}
+
+.sidebarLinks{
+    width: 100%;
+    padding: 10px;
+    padding-left: 15%;
+    padding-right: 0px;
+    color: #545b66;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+.sidebarLinks:hover{
+    text-decoration: none;
+    color: #ee5d6e;
+}
+
+.SidebarLinkDiv{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.SidebarLinkDiv label{
+    margin-bottom:1px;
+    margin-left: 20px;
+    pointer-events: none;
+    flex-grow: 1;
+}
+.SidebarLinkDiv svg{
+    width: 25px;
+    height: 25px;
+}
+
+.activePageHighlightLink{
+    position: absolute;
+    right: 0.5px;
+    height: 110%;
+    width: 3px;
+    background-color: #ee5d6e;
+    border-radius: 4px;
+}
+
+.firstNameHeading{
+    font-size: 25px;
+    color: #545b66;
+    font-weight: 600;
+
+}

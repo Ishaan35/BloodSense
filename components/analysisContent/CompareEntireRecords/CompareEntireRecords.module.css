@@ -1,0 +1,210 @@
+.MainContainer{
+    width: 100%;
+    position: relative;
+    background-color: #f6f6ff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: visible;
+    padding-bottom: 10vh;
+    flex: 1;
+}
+
+.SearchBox{
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    /* -webkit-box-shadow: 0px 1px 8px 0px #e2e2ec; 
+    box-shadow: 0px 1px 8px 0px #e2e2ec; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 3.5px solid #eaeaf1
+}
+
+.Heading{
+    font-size: 25px;
+    font-weight: 500;
+    color: #545b66;
+}
+
+.prompt{
+    color: rgb(180, 182, 195);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.RecordSelectionGrid{
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 1fr;
+    max-width: 100%;
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+
+.SearchButton{
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(62, 160, 62);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.SearchButton:hover{
+    background-color: rgb(51, 132, 51);
+    transform: scale(1.05);
+}
+.SearchButton:disabled{
+    opacity: 0.5;
+}
+
+.menuItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuItem label{
+    font-size: 10px;
+    color: rgb(154, 154, 171);
+}
+
+.ChartBox{
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    /* -webkit-box-shadow: 0px 1px 8px 0px #e2e2ec; 
+    box-shadow: 0px 1px 8px 0px #e2e2ec; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 3.5px solid #eaeaf1;
+    margin-top: 30px;
+}
+
+
+.TableContainer{
+    width: 80% !important;
+    min-height: 20vh;
+    background-color: white;
+    border-radius: 8px;
+    /* -webkit-box-shadow: 0px 1px 8px 0px #e2e2ec; 
+    box-shadow: 0px 1px 8px 0px #e2e2ec; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    position: relative;
+    border: 3.5px solid #eaeaf1;
+    position: relative;
+    margin-top: 30px;
+}
+
+.TableContainer table {
+    max-width: 100% !important;
+    border-collapse: collapse;
+    overflow: hidden; /* This is necessary to hide the corners of table cells */
+    outline: 1px solid #c8cfdf
+  }
+  
+.tableHeading{
+    padding: 8px;
+    border: 1px solid #b2bed8;
+    text-align: left;
+    border-collapse: collapse;
+    color: #6e718a;
+    font-size: 18px;
+}
+.tableHeading label{
+    font-size: small;
+    color: rgb(171, 173, 188);
+}
+.TableContainer table th label{
+    display: flex;
+    flex-direction: row;
+}
+.TableContainer table td{
+    padding: 8px;
+    border: 1px solid #b2bed8;
+    text-align: left;
+    padding-left: 20px;
+    border-collapse: collapse;
+ }
+
+
+
+ 
+ .TableContainer table thead {
+     background-color: #f2f2f2;
+     border-collapse: collapse;
+    }
+    
+.TableDataDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TableDataDiv div{
+    display: flex;
+    flex-direction: column;
+}
+
+.TableDataDiv div span{
+    font-size: small;
+    color: rgb(171, 173, 188);;
+}
+
+.IndicatorBoxGood{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(75, 191, 104);
+    border-radius: 5px;
+    position: relative;
+    transform: scale(1.2);
+    border: 1px solid rgb(42, 164, 73)
+  }
+
+  .IndicatorBoxBad{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 213, 0);
+    border-radius: 7px;
+    position: relative;
+    transform: scale(1.2);
+    border: 1px solid rgb(220, 176, 0)
+  }
+
+  .NoDataFound{
+    height: 30vh;
+    max-width: 100%;
+    background-color: rgb(231, 232, 243);
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.NoDataToShowText{
+    color: rgb(151, 151, 161);
+    font-size: 25px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.NoDataFoundIcon{
+    color: rgb(151, 151, 161);
+    transform: scale(3);
+    animation-name: fadeInIcon;
+    animation-duration: 2s;
+}

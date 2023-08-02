@@ -1,0 +1,68 @@
+.MainContainer{
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-height: 50%;
+    overflow-y:visible;
+}
+
+.dropdownItems{
+    width: 100%;
+    font-size: 16px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+
+    color: rgb(99, 97, 125);
+    font-size: 16px;
+}
+.dropdownItems:hover{
+    background-color: rgb(240, 242, 255);
+    cursor: pointer;
+}
+
+.OptionsContainer{
+    position: absolute;
+    top: 60px;
+    border: 1px solid lightgray;
+    max-height: 500px;
+    overflow-y: auto;
+    z-index: 5;
+}
+
+.searchInput{
+
+    padding: 10px;
+    border: 1px solid rgb(167, 171, 194);
+    
+    
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.searchInput input{
+    width: 95%;
+    position: absolute;
+    color: rgb(99, 97, 125);
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+.searchInput svg{
+    position: absolute;
+    right: 10px;
+    color: rgb(99, 97, 125);
+    height: 15px;
+    width: 15px;
+    
+}

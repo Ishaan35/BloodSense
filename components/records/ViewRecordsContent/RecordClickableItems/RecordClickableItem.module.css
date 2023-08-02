@@ -1,0 +1,107 @@
+.MainContainer{
+    width: 95%;
+    min-height: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f7f8fc;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: 1px solid lightgray;
+    position: relative;
+}
+
+.MainContainer:disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.MainContainer label{
+    pointer-events: none;
+}
+
+
+.MainContainer:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.RecordDetails{
+    margin-left: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: rgb(45, 44, 79);
+}
+
+.dateDetail{
+    color: rgb(167, 168, 185);
+    font-size: small;
+}
+
+
+.ThreeDots{
+    position: absolute;
+    float: right;
+    right: 3%;
+    transform: scale(2.2);
+    color: rgb(86, 86, 86);
+    padding-left: 3px;
+    padding-right: 3px;
+    transition: 0.07s;
+}
+
+.ThreeDots:hover{
+    cursor: pointer;
+    color: rgb(47, 47, 47);
+    background-color: rgb(228, 229, 238);
+    border-radius: 3px;
+}
+
+
+.DeleteElementPopup{
+    min-width: 100px;
+    min-height: 30px;
+    background-color: white;
+    float: left;
+    position: absolute;
+    left:90%;
+    transform: scale(0) translate(0%, 0%);
+    transition: 0.1s;
+    padding: 10px;
+}
+
+.DeleteElementPopupActive{
+    min-width: 100px;
+    min-height: 30px;
+    background-color: white;
+    float: left;
+    position: absolute;
+    left:90%;
+    transform: scale(1);
+    transition: 0.1s;
+    padding: 10px;
+    border: 1px solid rgb(174, 182, 195);
+    z-index: 5;
+    border-radius: 5px;
+    align-items: center;
+    display:flex;
+    transform: scale(1) translate(-75%, 0%);
+}
+
+
+.DeleteElementPopupActive:hover{
+    background-color: whitesmoke;
+}
+
+.DeleteElementPopupActive label{
+    pointer-events: none;
+    color: rgb(70, 76, 121);
+}
+
+.DeleteElementPopupActive svg{
+    color: rgb(192, 62, 62);
+}

@@ -1,0 +1,114 @@
+.MainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(247,248,252);
+    z-index: 1000;
+    animation: fadeIn 0s linear;
+}
+
+.MainContainer p{
+    color: rgb(144, 144, 168);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+.LoadingAnimationContainer{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.5);
+}
+
+.LoadingAnimationCircle{
+    background-color: rgb(144, 144, 168);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.circle1{
+    animation: circle1Anim 1s cubic-bezier(0.69, 0.05, 0.21, 0.88) infinite;
+}
+.circle2{
+    animation: circle2Anim 1s cubic-bezier(0.69, 0.05, 0.21, 0.88) infinite;
+}
+.circle3{
+    animation: circle3Anim 1s cubic-bezier(0.69, 0.05, 0.21, 0.88) infinite;
+}
+.circle4{
+    animation: circle4Anim 1s cubic-bezier(0.69, 0.05, 0.21, 0.88) infinite;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes circle1Anim{
+
+    0%{
+        transform: translateY(0px);
+    }
+    12.5%{
+        transform: translateY(-20px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes circle2Anim{
+
+    25%{
+        transform: translateY(0px);
+    }
+    37.5%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes circle3Anim{
+
+    50%{
+        transform: translateY(0px);
+    }
+    62.5%{
+        transform: translateY(-20px);
+    }
+    75%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes circle4Anim{
+
+
+    75%{
+        transform: translateY(0px);
+    }
+    87.5%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
