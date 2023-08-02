@@ -116,7 +116,7 @@ export default function Home() {
               Get Started Now
               <FaChevronRight></FaChevronRight>
             </div>
-            <label style={{ paddingBottom: "20px", color:"whitesmoke" }}>
+            <label style={{ paddingBottom: "20px", color: "whitesmoke" }}>
               Or try the mobile app:
             </label>
             <br></br>
@@ -156,10 +156,10 @@ export default function Home() {
               <br></br>
 
               <p>
-                With BloodTest Tracker, you can say goodbye to the hassle of
-                managing paper records. Our document storage feature lets you
-                keep all your bloodwork documents in one place. Easily access
-                past results whenever needed.
+                With {process.env.NEXT_PUBLIC_APP_NAME}, you can say goodbye to
+                the hassle of managing paper records. Our document storage
+                feature lets you keep all your bloodwork documents in one place.
+                Easily access past results whenever needed.
               </p>
             </div>
             <div
