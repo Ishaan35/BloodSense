@@ -67,8 +67,8 @@ export default function Navbar(){
         )}
         {!SignedInUser &&
           !loading &&
-          !window.location.pathname === "/login" &&
-          !window.location.pathname === "/signup" && (
+          window.location.pathname !== "/login" &&
+          window.location.pathname !== "/signup" && (
             <Link
               href="/login"
               className={navbarStyles.navbarLink}
@@ -79,8 +79,8 @@ export default function Navbar(){
           )}
         {!SignedInUser &&
           !loading &&
-          !window.location.pathname === "/login" &&
-          !window.location.pathname === "/signup" && (
+          window.location.pathname !== "/login" &&
+          window.location.pathname !== "/signup" && (
             <Link
               href="/signup"
               className={navbarStyles.navbarLink}
@@ -89,25 +89,6 @@ export default function Navbar(){
               Sign Up
             </Link>
           )}
-
-        {!SignedInUser && window.location.pathname === "/" && (
-          <>
-            <Link
-              href="/login"
-              className={navbarStyles.navbarLink}
-              style={{ ...loginSignupTextStyles, fontSize: "20px" }}
-            >
-              Log In
-            </Link>
-            <Link
-              href="/signup"
-              className={navbarStyles.navbarLink}
-              style={{ ...loginSignupTextStyles, fontSize: "20px" }}
-            >
-              Sign Up
-            </Link>
-          </>
-        )}
 
         {/* 1 link and 2 placeholders for when signed in*/}
         {SignedInUser && !loading && (
