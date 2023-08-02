@@ -221,8 +221,3 @@ export default function Home() {
     </>
   );
 }
-
-
-Home.getLayout = (page) => {
-  return <>{page}</>;
-};

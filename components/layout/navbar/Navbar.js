@@ -24,6 +24,15 @@ export default function Navbar(){
           color: "#414252",
         });
       }
+      else if(window.location.pathname === "/" || window.location.pathname === ""){
+        setLoginSignupStyles({
+          background: "#ffdede",
+          borderBottom: "3px solid #f5d0d0",
+        });
+        setLoginSignupTextStyles({
+          color: "#414252",
+        });
+      }
       else{
         setLoginSignupStyles({})
         setLoginSignupTextStyles({})
@@ -80,6 +89,25 @@ export default function Navbar(){
               Sign Up
             </Link>
           )}
+
+        {!SignedInUser && window.location.pathname === "/" && (
+          <>
+            <Link
+              href="/login"
+              className={navbarStyles.navbarLink}
+              style={{ ...loginSignupTextStyles, fontSize: "20px" }}
+            >
+              Log In
+            </Link>
+            <Link
+              href="/signup"
+              className={navbarStyles.navbarLink}
+              style={{ ...loginSignupTextStyles, fontSize: "20px" }}
+            >
+              Sign Up
+            </Link>
+          </>
+        )}
 
         {/* 1 link and 2 placeholders for when signed in*/}
         {SignedInUser && !loading && (
