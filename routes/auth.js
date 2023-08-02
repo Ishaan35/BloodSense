@@ -104,6 +104,7 @@ module.exports = (passport) => {
 
   });
 
+  //if this isn't working on local development, make sure the DigiCertGlobalCA.crt.pem file is up to date. Get latest version from the azure sql db portal on the Networking tab!
   router.post("/login", (req, res, next) => {
     const middlewareFunc = passport.authenticate("local", (err, user, info) => {
       if (err) {
@@ -114,13 +115,18 @@ module.exports = (passport) => {
 
       if (user) {
         req.login(user, (err) => {
-          if (err) throw err;
+          if (err){
+            res.status(500).send("Internal Server Error During Login")
+          }
+          else{
+            //this response is sent
+            res.status(200).send({
+              success: true,
+              message: "User Logged In Successfully",
+            });
+          }
 
-          //this response is sent
-          res.status(200).send({
-            success: true,
-            message: "User Logged In Successfully",
-          });
+          
         });
       }
     });
