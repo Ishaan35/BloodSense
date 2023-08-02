@@ -134,7 +134,7 @@ export default function DashboardContent({recentRecords, recentDocuments}){
         }
 
       }catch(err){
-        router.reload();
+        router.reload()
       }
     }
 
