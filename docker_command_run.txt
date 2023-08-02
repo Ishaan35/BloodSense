@@ -1,0 +1,2 @@
+docker run -p 8080:80 ishaan35/bloodsense:1.0
+docker run --env-file .env docker.io/ishaan35/bloodsense:1.1
