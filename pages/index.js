@@ -1,9 +1,20 @@
 import IndexStyles from '../styles/index.module.css'
 import {FaChevronRight} from 'react-icons/fa'
 import Head from "next/head";
-
+import { useEffect } from 'react';
+import axios from 'axios';
 
 export default function Home() {
+
+  useEffect(() =>{
+    async function wakeup(){
+      const res = await axios({
+        method:"get",
+        url:`${process.env.NEXT_PUBLIC_BASE_SERVER_URL}`
+      })
+    }
+    wakeup();
+  },[])
   return (
     <>
       <Head>
