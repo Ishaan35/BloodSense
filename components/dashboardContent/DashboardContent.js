@@ -275,7 +275,9 @@ export default function DashboardContent({recentRecords, recentDocuments}){
                       DashboardContentStyles.ProfileCompleteDoughnutStyles
                     }
                   >
-                    <Doughnut data={doughnutData} options={doughnutOptions} />
+                    {SignedInUser && doughnutData && doughnutOptions && (
+                      <Doughnut data={doughnutData} options={doughnutOptions} />
+                    )}
                     <CountUp
                       className={DashboardContentStyles.DoughnutPercentLabel}
                       end={parseInt(
