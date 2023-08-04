@@ -30,6 +30,16 @@ export default function Login(){
       }, 400)
     },[])
 
+    useEffect(() => {
+      async function wakeup() {
+        const res = await axios({
+          method: "get",
+          url: `${process.env.NEXT_PUBLIC_BASE_SERVER_URL}`,
+        });
+      }
+      wakeup();
+    }, []);
+
     const router = useRouter();
     const login = () =>{
       setLoadingPage(true)
@@ -200,23 +210,3 @@ export default function Login(){
     );
 }
 
-export async function getServerSideProps(context) {
-
-
-  // Perform authentication and authorization checks here
-  const user = await checkAuthenticationWithCookie(context.req.headers.cookie);
-
-  if (user) {
-    // User is not authenticated, redirect to login page or handle the unauthorized access
-    return {
-      redirect: {
-        destination: "/dashboard",
-        permanent: false,
-      },
-    };
-  }
-
-  return {
-    props: {}
-  };
-}

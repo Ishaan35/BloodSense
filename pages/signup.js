@@ -32,6 +32,16 @@ export default function Signup() {
     }, 400)
   },[])
 
+  useEffect(() => {
+    async function wakeup() {
+      const res = await axios({
+        method: "get",
+        url: `${process.env.NEXT_PUBLIC_BASE_SERVER_URL}`,
+      });
+    }
+    wakeup();
+  }, []);
+
   const Signup = () => {
     if (passwordInput !== confirmPasswordInput) {
       setError("Passwords do not match!");
@@ -247,21 +257,4 @@ export default function Signup() {
       </div>
     </div>
   );
-}
-
-
-export async function getServerSideProps(context) {
-  const user = await checkAuthenticationWithCookie(context.req.headers.cookie);
-  if (user) {
-    // User is authenticated. just send them to the dashboard
-    return {
-      redirect: {
-        destination: "/dashboard",
-        permanent: false,
-      },
-    };
-  }
-  return {
-    props: {},
-  };
 }
