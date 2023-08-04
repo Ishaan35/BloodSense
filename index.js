@@ -1,3 +1,5 @@
+//Server hosted on Render.com
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -8,6 +10,7 @@ const cookieParser = require("cookie-parser");
 const app = express();
 require("dotenv").config();
 const db = require("./db/db"); // Import your MySQL connection pool
+const {wait} = require('./utils/fileUploadUtils')
 
 
 app.set("trust proxy", 1);
@@ -92,6 +95,16 @@ app.get("/", (re1, res) => {
     connection.release(); // Release the connection back to the pool after testing
   });
 });
+
+app.get("/ping", async (req, res) =>{
+  if(!req.user){
+    res.status(401).send("Unauthenticated");
+  }
+  else{
+    res.status(200).send("Authenticated")
+  }
+})
+
 //routers
 app.use("/", authRouter(passport)); //send the same passport instance
 app.use("/", googleAuthRouter(passport));
