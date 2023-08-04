@@ -2,7 +2,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div align="left">
   <a href="https://app.bloodsense.online/" style="display:flex; align-items:center;">
     <img src="https://app.bloodsense.online/_next/image?url=%2FAppLogoCircle.png&w=64&q=75" alt="Logo" width="80" height="80" style="margin-right:20px">
 	<h1>BloodSense</h1>
@@ -51,9 +51,9 @@ This project is currently production-ready [here](https://app.bloodsense.online/
 	• **Past Documents**: A place to view previously uploaded documents or upload new    documents
 	• **Analysis**: A place where the user can compare specific biomarker data or record data in detail. Charts, and tables will be provided to easily spot trends and take action if needed.
 
-##Screenshots
+## Screenshots
 
-#####Dashboard
+##### Dashboard
 <img src="https://raw.githubusercontent.com/Ishaan35/BloodSense/main/app_screenshots/dashboard.png">
 
 ##### Creating New Record
