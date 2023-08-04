@@ -1,10 +1,17 @@
 import IndexStyles from '../styles/index.module.css'
 import {FaChevronRight} from 'react-icons/fa'
 import Head from "next/head";
-import { useEffect } from 'react';
+import { useState, useContext, useEffect } from "react";
+import { UserContext } from "../contexts/UserContext";
 import axios from 'axios';
+import { useRouter } from 'next/router';
+import LoadingAnimation from '@/components/layout/LoadingAnimation/LoadingAnimation';
 
 export default function Home() {
+
+  const router = useRouter();
+  const { SignedInUser, SetSignedInUser, LoadingPage, setLoadingPage } =
+    useContext(UserContext);
 
   useEffect(() =>{
     async function wakeup(){
@@ -15,6 +22,59 @@ export default function Home() {
     }
     wakeup();
   },[])
+
+  function redirectToLogin() {
+    router.push("/signup");
+  }
+
+  async function makeRequestWithTimeout() {
+    const timeoutPromise = new Promise((_, reject) => {
+      setTimeout(() => {
+        reject(new Error("Request timeout"));
+      }, 4000); // 4 seconds timeout max
+    });
+
+    const axiosPromise = axios({
+      url: `${process.env.NEXT_PUBLIC_BASE_SERVER_URL}/ping`,
+      withCredentials: true,
+      method:"get"
+    }); 
+
+    try {
+      // Wait for either the Axios request to resolve or the timeout to occur
+      const result = await Promise.race([axiosPromise, timeoutPromise]);
+
+      // Request completed successfully
+      return result;
+    } catch (error) {
+      // Handle the timeout or other errors
+      console.error(error);
+      redirectToLogin(); // Redirect the user
+      throw error; // Optional: rethrow the error to be handled in the calling code
+    }
+  }
+
+  //basically even if the user is signed in, if the server is not responding in time as it may just be booting up, we redirect to signup page no matter what
+  //if the server is active and we are not authenticated, we get redirected to sign in page regardless
+  //if server is active and we are authenticated (within 3 seconds), then we are redirected to dashboard
+  async function pingAndTryToGoToDashboard(){
+    setLoadingPage(true);
+    try {
+      const res = await makeRequestWithTimeout();
+      if(res && res.status === 200){
+        router.push('/dashboard')
+      }
+      else if(res && res.status >= 400){
+        router.push('/signup')
+      }
+      // Handle the data as needed
+    } catch (error) {
+      // Handle any errors or the timeout redirect
+    }
+  }
+
+
+
   return (
     <>
       <Head>
@@ -102,6 +162,7 @@ export default function Home() {
         </script>
       </Head>
       <div className={IndexStyles.MainContainer}>
+        {LoadingPage && <LoadingAnimation />}
         <div className={IndexStyles.IntroBox}>
           <img
             className={IndexStyles.TopLogo}
@@ -122,7 +183,10 @@ export default function Home() {
 
             <div
               className={IndexStyles.TryOnDeskTop}
-              onClick={() => (window.location.href = "/dashboard")}
+              onClick={() => {
+                setLoadingPage(true);
+                pingAndTryToGoToDashboard();
+              }}
             >
               Get Started Now
               <FaChevronRight></FaChevronRight>

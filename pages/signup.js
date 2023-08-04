@@ -27,9 +27,7 @@ export default function Signup() {
   }, [SetSignedInUser]);
 
   useEffect(() =>{
-    setTimeout(() =>{
-      setLoadingPage(false)
-    }, 400)
+    setLoadingPage(false)
   },[])
 
   useEffect(() => {
