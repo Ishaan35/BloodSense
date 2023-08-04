@@ -122,7 +122,7 @@ export default function Home() {
 
             <div
               className={IndexStyles.TryOnDeskTop}
-              onClick={() => (window.location.href = "/signup")}
+              onClick={() => (window.location.href = "/dashboard")}
             >
               Get Started Now
               <FaChevronRight></FaChevronRight>
