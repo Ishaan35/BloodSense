@@ -47,6 +47,6 @@
   },
   "devDependencies": {
     "react-svg-loader": "^3.0.3",
-    "next": "13.4.6",
+    "next": "13.4.6"
   }
 }
