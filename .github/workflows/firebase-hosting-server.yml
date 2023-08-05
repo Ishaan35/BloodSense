@@ -3,7 +3,7 @@ name: Deploy to Firebase Hosting
 on:
   push:
     branches:
-      - main # Change this to the branch you want to trigger the deployment
+      - server # Change this to the branch you want to trigger the deployment
 
 jobs:
   build_and_deploy:
