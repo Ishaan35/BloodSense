@@ -17,7 +17,8 @@ export default function Home() {
     async function wakeup(){
       const res = await axios({
         method:"get",
-        url:`${process.env.NEXT_PUBLIC_BASE_SERVER_URL}`
+        url:`${process.env.NEXT_PUBLIC_BASE_SERVER_URL}`,
+        withCredentials:true
       })
     }
     wakeup();
@@ -133,7 +134,6 @@ export default function Home() {
         {/* Additional Meta Tags */}
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Content-Language" content="en" />
         <meta name="geo.region" content="US" />
         <meta name="geo.placename" content="City, State" />
         <meta name="geo.position" content="latitude;longitude" />

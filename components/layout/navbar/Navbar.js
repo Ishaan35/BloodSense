@@ -68,7 +68,8 @@ export default function Navbar(){
         {!SignedInUser &&
           !loading &&
           window.location.pathname !== "/login" &&
-          window.location.pathname !== "/signup" && (
+          window.location.pathname !== "/signup" &&
+          window.location.pathname !== "/" && (
             <Link
               href="/login"
               className={navbarStyles.navbarLink}
@@ -80,7 +81,8 @@ export default function Navbar(){
         {!SignedInUser &&
           !loading &&
           window.location.pathname !== "/login" &&
-          window.location.pathname !== "/signup" && (
+          window.location.pathname !== "/signup" &&
+          window.location.pathname !== "/" && (
             <Link
               href="/signup"
               className={navbarStyles.navbarLink}
