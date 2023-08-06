@@ -83,6 +83,7 @@ export default function Login(){
           event.data === "googleSSOLoginSuccess"
         ) {
           window.removeEventListener("message", messageListener);
+          setLoadingPage(true);
           router.push("/dashboard");
         }
 
