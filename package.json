@@ -46,7 +46,7 @@
     "vercel": "^31.2.0"
   },
   "devDependencies": {
-    "react-svg-loader": "^3.0.3",
+    "react-svg-loader": "^3.0.3"
     "next": "13.4.6"
   }
 }
