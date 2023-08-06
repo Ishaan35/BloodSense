@@ -1,0 +1,37 @@
+
+
+.MainContainer{
+      margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.center h2{
+    color: rgb(96, 94, 112);
+    font-weight: 500;
+}
+
+.grayscaleImage{
+    /* Convert the image to grayscale */
+    filter: grayscale(100%);
+    /* Darken the image - you can adjust the value (0% to 100%) to control the darkness */
+    filter: brightness(50%);
+    /* Add vendor prefixes for cross-browser support */
+    -webkit-filter: grayscale(100%) brightness(50%);
+    -moz-filter: grayscale(100%) brightness(50%);
+    -o-filter: grayscale(100%) brightness(50%);
+    -ms-filter: grayscale(100%) brightness(50%);
+    width: 150px;
+    height: 150px;
+}
