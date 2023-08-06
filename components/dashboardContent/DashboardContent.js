@@ -11,8 +11,8 @@ import {SlGraph} from 'react-icons/sl'
 import {CgProfile} from 'react-icons/cg'
 import {MdOutlineScale} from 'react-icons/md'
 
-import {Chart, ArcElement} from 'chart.js'
-Chart.register(ArcElement);
+import {Chart, ArcElement, Tooltip} from 'chart.js'
+Chart.register(ArcElement, Tooltip);
 import { Doughnut } from 'react-chartjs-2';
 import CountUp from 'react-countup';
 import Image from 'next/image';
@@ -67,28 +67,28 @@ export default function DashboardContent({recentRecords, recentDocuments}){
     })
 
     useEffect(() =>{
-      let count = 0;
-      if(SignedInUser){
-        if(SignedInUser.profile_img && SignedInUser.profile_img !== "")
-          count++;
-        if(SignedInUser.first_name && SignedInUser.first_name !== "")
-          count++;
-        if(SignedInUser.last_name && SignedInUser.last_name !== "")
-          count++;
-        if(SignedInUser.email && SignedInUser.email !== "")
-          count++;
-        if(SignedInUser.age && SignedInUser.age !== "")
-          count++;
-        if(SignedInUser.height_cm && SignedInUser.height_cm !== "")
-          count++;
-        if(SignedInUser.weight_kg && SignedInUser.weight_kg !== "")
-          count++;
 
+      const setup = async () =>{
 
+        await new Promise((resolve, reject) =>{
+          setTimeout(() =>{
+            resolve();
+          }, 1000)
+        })
+        let count = 0;
+        if (SignedInUser.profile_img && SignedInUser.profile_img !== "")
+          count++;
+        if (SignedInUser.first_name && SignedInUser.first_name !== "") count++;
+        if (SignedInUser.last_name && SignedInUser.last_name !== "") count++;
+        if (SignedInUser.email && SignedInUser.email !== "") count++;
+        if (SignedInUser.age && SignedInUser.age !== "") count++;
+        if (SignedInUser.height_cm && SignedInUser.height_cm !== "") count++;
+        if (SignedInUser.weight_kg && SignedInUser.weight_kg !== "") count++;
 
         setProfileAmountComplete(count);
 
         const data = {
+          labels: ["Completed", "Incomplete"],
           datasets: [
             {
               data: [count, 7 - count], // [x, y] represents [filled data, remaining data]
@@ -113,6 +113,10 @@ export default function DashboardContent({recentRecords, recentDocuments}){
 
         setDoughnutData(data);
         setDoughnutOptions(options);
+      }
+      
+      if(SignedInUser){
+        setup()
       }
     },[SignedInUser])
 
