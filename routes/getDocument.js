@@ -51,8 +51,10 @@ module.exports = (passport) =>{
           // Fetch the document from the modified URL on the server
           //this response is an encrypted file. We need to decrypt it first
           const response = await fetch(fileURL);
-
           const tempDecryptedFile = 'decrypted/decryptedFile.pdf'; //destination of decrypted file
+
+
+
           
           //the decrypted file will be written to that location
           try {
@@ -64,6 +66,7 @@ module.exports = (passport) =>{
           }
 
           res.set("Content-Disposition", "inline"); // Instructs the browser to display the document
+
 
           // Stream the pdf content from the modified URL to the client response
           //since we cant use response directly since it is encrypted, we need to read the decrypted file first, and then pipe it
