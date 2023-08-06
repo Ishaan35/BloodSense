@@ -88,7 +88,6 @@ export default function DashboardContent({recentRecords, recentDocuments}){
         setProfileAmountComplete(count);
 
         const data = {
-          labels: ["Completed", "Incomplete"],
           datasets: [
             {
               data: [count, 7 - count], // [x, y] represents [filled data, remaining data]
