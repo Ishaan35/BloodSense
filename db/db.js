@@ -9,6 +9,7 @@ if (process.env.IN_PRODUCTION && process.env.IN_PRODUCTION === "false")
 
 
 let poolConfig = null;
+console.log(inProduction)
 
 if(inProduction){
   poolConfig = {
@@ -27,9 +28,8 @@ else{
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
-    ssl: {
-      ca: fs.readFileSync("DigiCertGlobalRootCA.crt.pem"),
-    },
+    ssl: false,
+    insecureAuth: true
   };
 }
 
