@@ -30,6 +30,7 @@ This app authenticates its users using a session-based approach using express-se
 * [![][MySQL]][SQL-url]
 * [![][Google Cloud]][GoogleCloud-url]
 * [![][Microsoft Azure]][Azure-url]
+* [![][AWS]][AWS-url]
 * [![][Vercel]][Vercel-url]
 * [![][Render]][Render-url]
 * [![][NameCheap]][Namecheap-url]
@@ -147,6 +148,8 @@ Project Link: https://app.bloodsense.online
 [GoogleCloud-url]: https://cloud.google.com/
 [Microsoft Azure]: https://img.shields.io/badge/Microsoft%20Azure-343440?style=for-the-badge&logo=microsoft-azure&logoColor=42adff
 [Azure-url]: https://azure.microsoft.com/en-us/
+[AWS]: https://img.shields.io/badge/Amazon%20Web%20Services-232f3f?style=for-the-badge&logo=amazon-aws&logoColor=ec912d
+[AWS-url]: https://aws.amazon.com
 [Vercel]:https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=ffffff
 [Vercel-url]:https://vercel.com/dashboard
 [Render]:https://img.shields.io/badge/Render-4351e8?style=for-the-badge&logo=render&logoColor=ffffff
