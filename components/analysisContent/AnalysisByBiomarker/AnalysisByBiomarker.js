@@ -206,7 +206,7 @@ export default function AnalysisByBiomarker(){
         if(!normalRangeText){
             normalRangeText = currentGraphBiomarker.normalRanges[measureUnit.trim()];
         }
-        let rangeVals = normalRangeText.split('-');
+        let rangeVals = normalRangeText ? normalRangeText.split('-') : ["0","0"];
         if(rangeVals[1].toLowerCase().indexOf("infinity") >= 0){
             return val >= parseFloat(rangeVals[0])
         }
