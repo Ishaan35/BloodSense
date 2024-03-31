@@ -1,4 +1,4 @@
-const db = require('../db/db')
+const db = require('../db/postgresDb')
 const bcrypt = require('bcrypt')
 const localStrategy = require('passport-local').Strategy;
 require('dotenv').config();
@@ -13,15 +13,15 @@ module.exports = (passport) =>{
         },
         function verify(username, password, doneCb) { //this verify function is for logging in! The register route takes care of creating account in DB
           const query =
-            `SELECT * FROM ${process.env.DB_NAME}.users WHERE username = ?`;
+            `SELECT * FROM users WHERE username = $1`;
           db.query(query, [username], (err, result) => {
             if (err) throw err;
-            if (result.length == 0){
+            if (result.rows.length == 0){
               return doneCb(null, false, {
                 message: "Username or password is incorrect",
               });
             }
-            if (result[0].isGoogle == 1 || result[0].isGoogle == true){
+            if (result.rows[0].isGoogle == 1 || result.rows[0].isGoogle == true){
               return doneCb(null, false, {
                 message: "Username or password is incorrect",
               });
@@ -29,10 +29,10 @@ module.exports = (passport) =>{
             //otherwise all good
             bcrypt.compare(
               password,
-              result[0].password,
+              result.rows[0].password,
               (error, response) => {
                 if (error) throw error;
-                if (response == true) return doneCb(null, result[0]);
+                if (response == true) return doneCb(null, result.rows[0]);
                 return doneCb(null, false, {
                   message: "Username or password is incorrect",
                 }); //password did not match
@@ -49,7 +49,7 @@ module.exports = (passport) =>{
 
     passport.deserializeUser(async (user, doneCb) => {
       //adds req.user to the req object in requests
-      const findUsersQuery = `SELECT * FROM ${process.env.DB_NAME}.users WHERE id = ?`;
+      const findUsersQuery = `SELECT * FROM users WHERE id = $1`;
 
       let result = null;
       try{

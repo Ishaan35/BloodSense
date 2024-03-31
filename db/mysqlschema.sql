@@ -65,6 +65,14 @@ ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
+-- connect-pg-simple session
+CREATE TABLE "session" (
+  "sid" varchar NOT NULL COLLATE "default" PRIMARY KEY,
+  "sess" json NOT NULL,
+  "expire" timestamp(6) NOT NULL
+);
+
+
 -- ----------------------------------------------------------------------------
 -- Table bloodtesttracker2.users
 -- ----------------------------------------------------------------------------
@@ -73,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `bloodtesttracker2`.`users` (
   `username` VARCHAR(45) NOT NULL,
   `password` VARCHAR(120) NULL DEFAULT NULL,
   `email` VARCHAR(120) NULL DEFAULT NULL,
-  `isGoogle` TINYINT NULL DEFAULT '0',
+  `isgoogle` TINYINT NULL DEFAULT '0',
   `first_name` VARCHAR(50) NOT NULL,
   `last_name` VARCHAR(50) NULL DEFAULT NULL,
   `age` TINYINT NULL DEFAULT NULL,

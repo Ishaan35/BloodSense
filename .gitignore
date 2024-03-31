@@ -79,6 +79,8 @@ web_modules/
 .env.production.local
 .env.local
 
+tips.txt
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
@@ -131,3 +133,4 @@ dist
 
 
 DigiCertGlobalRootCA.crt.pem
+prod-ca-2021.crt

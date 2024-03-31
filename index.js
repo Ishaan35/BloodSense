@@ -5,16 +5,21 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const passport = require("passport");
 const expressSession = require("express-session");
-const MySQLStore = require("express-mysql-session")(expressSession); // Import express-mysql-session
+
+const MySQLStore = require("express-mysql-session")(expressSession); //mysql store
+const PgSession = require('connect-pg-simple')(expressSession) //postgres store
+
 const cookieParser = require("cookie-parser");
 const app = express();
 require("dotenv").config();
-const db = require("./db/db"); // Import your MySQL connection pool
+const db = require("./db/postgresDb"); // Import mysql connection pool
 const {wait} = require('./utils/fileUploadUtils')
 
 
 app.set("trust proxy", 1);
 app.enable("trust proxy");
+
+/*
 // Configure express-mysql-session
 const sessionStore = new MySQLStore(
   {
@@ -23,6 +28,12 @@ const sessionStore = new MySQLStore(
   },
   db
 );
+*/
+
+const sessionStore = new PgSession({
+  pool:db,
+  tableName: 'session',
+})
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -81,8 +92,8 @@ const analysisDataRouter = require("./routes/analysisData");
 const dashboardDataRouter = require("./routes/dashboardData");
 
 
-app.get("/", (re1, res) => {
-  db.getConnection((err, connection) => {
+app.get("/", (req, res) => {
+  db.query("SELECT NOW()", (err, result) => {
     if (err) {
       const errorResponse = {
         message: `${process.env.TESTVAR} Error connecting to the database: ${err.message}`,
@@ -90,11 +101,10 @@ app.get("/", (re1, res) => {
       };
       return res.status(500).json(errorResponse);
     }
-
     res.send(`Whats Up? DB seems to be working fine  ${process.env.TESTVAR}`);
-    connection.release(); // Release the connection back to the pool after testing
   });
 });
+
 
 app.get("/ping", async (req, res) =>{
   if(!req.user){

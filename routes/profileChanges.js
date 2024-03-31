@@ -62,15 +62,15 @@ module.exports = (passport) =>{
             res.status(400).send("Invalid Information").end();
             return;
         }
-        const updateUserInfoQueryWithImage = `UPDATE ${process.env.DB_NAME}.users 
-                            SET email = ?, 
-                                first_name = ?, 
-                                last_name = ?, 
-                                age = ?, 
-                                height_cm = ?, 
-                                weight_kg = ?,
-                                profile_img = ? 
-                            WHERE username = ?`;
+        const updateUserInfoQueryWithImage = `UPDATE users 
+                            SET email = $1, 
+                                first_name = $2, 
+                                last_name = $3, 
+                                age = $4, 
+                                height_cm = $5, 
+                                weight_kg = $6,
+                                profile_img = $7 
+                            WHERE username = $8`;
         
 
         try{

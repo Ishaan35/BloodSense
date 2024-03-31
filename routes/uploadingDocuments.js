@@ -68,7 +68,7 @@ module.exports = (passport) =>{
                        
    
                        //do the sql query
-                       const fileRelationQuery = `INSERT INTO ${process.env.DB_NAME}.user_documents (document_id,user_id,document_name, date_added) VALUES (?,?,?, ?)`
+                       const fileRelationQuery = `INSERT INTO user_documents (document_id,user_id,document_name, date_added) VALUES ($1,$2,$3,$4)`;
                        
                        
    
@@ -167,9 +167,12 @@ module.exports = (passport) =>{
 
         try{
 
-            const query = `SELECT * FROM ${process.env.DB_NAME}.user_documents WHERE user_id = ?`;
+            const query = `SELECT * FROM user_documents WHERE user_id = $1`;
             const response = await queryPromise(query, [req.user.id]);
-
+            for(let i = 0; i < response.length; i++){
+                response[i]["date_added"] = parseInt(response[i]["date_added"]);
+            }
+            console.log(response)
             res.status(200).send(response);
             
         }catch(err){
@@ -198,7 +201,7 @@ module.exports = (passport) =>{
         
         //sql query
         try{
-            const query = `DELETE FROM ${process.env.DB_NAME}.user_documents WHERE document_id = ?`
+            const query = `DELETE FROM user_documents WHERE document_id = $1`
             const sqlResponse = await queryPromise(query, [documentId])
         }catch(err){
             console.log(err);

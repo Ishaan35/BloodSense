@@ -42,7 +42,7 @@ module.exports = (passport) =>{
 
             //sql db relation insert
             try{
-              const query = `INSERT INTO ${process.env.DB_NAME}.user_records (id, user_id, inTrash, record_name, date_edited) VALUES (?,?,?,?,?)`
+              const query = `INSERT INTO user_records (id, user_id, "inTrash", record_name, date_edited) VALUES ($1,$2,$3,$4,$5)`
               await queryPromise(query, [response.id, req.user.id, 0, response.recordName, Date.now()]);
             }catch(err){
               console.log(err);
@@ -75,7 +75,7 @@ module.exports = (passport) =>{
         
         //just an sql query
 
-        const query = `UPDATE ${process.env.DB_NAME}.user_records SET inTrash = ? WHERE id = ?`;
+        const query = `UPDATE user_records SET "inTrash" = $1 WHERE id = $2`;
         try{
           await queryPromise(query, [recordData.inTrash, recordData.id]);
 
@@ -108,7 +108,7 @@ module.exports = (passport) =>{
 
         //sql db relation update
         try{
-          const query = `UPDATE ${process.env.DB_NAME}.user_records SET record_name = ?, date_edited = ? WHERE id = ?`;
+          const query = `UPDATE user_records SET record_name = $1, date_edited = $2 WHERE id = $3`;
           await queryPromise(query, [recordData.recordName, Date.now(), recordData.id]);
         }catch(err){
           console.log(err);
@@ -181,6 +181,9 @@ module.exports = (passport) =>{
         return;
       }
       const data = await getAllUserRecordsMax50(req.user.id);
+      for(let i = 0; i < data.length; i++){
+        data[i]["date_edited"] = parseInt(data[i]["date_edited"])
+      }
       
       res.status(200).send(data);
     })
@@ -201,7 +204,7 @@ module.exports = (passport) =>{
 
       let old_custom_biomarkers_list = [];
       try{
-        const query = `SELECT custom_biomarker_list FROM ${process.env.DB_NAME}.custom_biomarkers WHERE user_id = ?`;
+        const query = `SELECT custom_biomarker_list FROM custom_biomarkers WHERE user_id = $1`;
         const response = await queryPromise(query, [req.user.id]);
         old_custom_biomarkers_list = JSON.parse(response[0].custom_biomarker_list);
         res.status(200).send(old_custom_biomarkers_list);

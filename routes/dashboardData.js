@@ -21,8 +21,8 @@ module.exports = (passport) =>{
         }
         
         //otherwise get the recent documents and recent records from sql db
-        const recordQuery = `SELECT id, record_name FROM ${process.env.DB_NAME}.user_records WHERE user_id = ? ORDER BY date_edited DESC LIMIT 3`;
-        const documentQuery = `SELECT document_id, document_name FROM ${process.env.DB_NAME}.user_documents WHERE user_id = ? ORDER BY date_added DESC LIMIT 3`;
+        const recordQuery = `SELECT id, record_name FROM user_records WHERE user_id = $1 ORDER BY date_edited DESC LIMIT 3`;
+        const documentQuery = `SELECT document_id, document_name FROM user_documents WHERE user_id = $1 ORDER BY date_added DESC LIMIT 3`;
         
         try{
 

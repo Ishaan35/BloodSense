@@ -29,7 +29,7 @@ module.exports = (passport) =>{
 
         //first do an sql query to see if the user actually owns this file
 
-        const verifyRecordQuery = `SELECT * FROM ${process.env.DB_NAME}.user_documents WHERE document_id = ? AND user_id = ?`;
+        const verifyRecordQuery = `SELECT * FROM user_documents WHERE document_id = $1 AND user_id = $2`;
         const response = await queryPromise(verifyRecordQuery, [fileName, req.user.id])
         
         //if no relation exists, dont serve the document

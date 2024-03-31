@@ -21,8 +21,8 @@ module.exports = (passport) => {
       return;
     }
 
-    const addUserQuery = `INSERT INTO ${process.env.DB_NAME}.users (id, username, password, first_name) VALUES (?,?,?,?)`;
-    const findUsersQuery = `SELECT * FROM ${process.env.DB_NAME}.users WHERE username = ?`;
+    const addUserQuery = `INSERT INTO users (id, username, password, first_name) VALUES ($1,$2,$3,$4)`;
+    const findUsersQuery = `SELECT * FROM users WHERE username = $1`;
     
     //we check for existing users with same username. if there are, or if there was an error, immediately end and handle the error
     try{
@@ -43,7 +43,10 @@ module.exports = (passport) => {
     try{
       let id = uuid();
       await queryPromise(addUserQuery, [id, username, hashedPassword, first_name]);
-      await queryPromise(`INSERT INTO ${process.env.DB_NAME}.custom_biomarkers (user_id, custom_biomarker_list) VALUES (?,?)`, [id, JSON.stringify([])]);
+      await queryPromise(
+        `INSERT INTO custom_biomarkers (user_id, custom_biomarker_list) VALUES ($1,$2)`,
+        [id, JSON.stringify([])]
+      );
     }
     catch(err){
       res.status(500).send("Database insertion error");

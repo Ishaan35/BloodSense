@@ -15,6 +15,7 @@
     "@azure/storage-blob": "^12.14.0",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
+    "connect-pg-simple": "^9.0.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
@@ -30,6 +31,7 @@
     "passport-google-oauth2": "^0.2.0",
     "passport-local": "^1.0.0",
     "pdf2pic": "^2.2.1",
+    "pg": "^8.11.3",
     "uuidv4": "^6.2.13"
   }
 }

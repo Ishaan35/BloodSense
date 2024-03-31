@@ -23,7 +23,7 @@ const updateExistingRecord = async (data, userID) =>{
 
         //check for custom biomarkers
 
-        const query = `SELECT custom_biomarker_list FROM ${process.env.DB_NAME}.custom_biomarkers WHERE user_id = ?`;
+        const query = `SELECT custom_biomarker_list FROM custom_biomarkers WHERE user_id = $1`;
         const response = await queryPromise(query, [userID]);
         let old_custom_biomarkers_list = JSON.parse(response[0].custom_biomarker_list);
 
@@ -59,7 +59,7 @@ const updateExistingRecord = async (data, userID) =>{
         
 
         //update biomarker list
-        await queryPromise(`UPDATE ${process.env.DB_NAME}.custom_biomarkers SET custom_biomarker_list = ? WHERE user_id = ?`, [JSON.stringify(old_custom_biomarkers_list),userID]);
+        await queryPromise(`UPDATE custom_biomarkers SET custom_biomarker_list = $1 WHERE user_id = $2`, [JSON.stringify(old_custom_biomarkers_list),userID]);
         const { resource: updatedDocument } = await container.item(data.id, userID).replace(data);
     
         return updatedDocument;
@@ -75,7 +75,7 @@ const deleteExistingRecord = async (data, userID) =>{
 
 
         //delete the sql entry too!
-        const query = `DELETE FROM ${process.env.DB_NAME}.user_records WHERE id = ?`;
+        const query = `DELETE FROM user_records WHERE id = $1`;
         await queryPromise(query, [data.id])
 
         return true;
@@ -97,7 +97,7 @@ const getRecordByRecordID = async (recordID, userID) =>{
 }
 
 const getAllUserRecordsMax50 = async (userID) =>{
-    const query = `SELECT id, inTrash, record_name, date_edited FROM ${process.env.DB_NAME}.user_records WHERE user_id = ? ORDER BY date_edited DESC`;
+    const query = `SELECT id, "inTrash", record_name, date_edited FROM user_records WHERE user_id = $1 ORDER BY date_edited DESC`;
 
     //getting only record id and other essential details. Not the JSON details of the form itself.
     try{
