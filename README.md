@@ -21,6 +21,8 @@ This app authenticates its users using a session-based approach using express-se
 
 ### Built With
 
+* [![][Docker]][Node-url]
+* [![Node][Node.js]][Node-url]
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Express][Express.js]][Express-url]
@@ -130,7 +132,9 @@ Project Link: https://app.bloodsense.online
 
 
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Node.js]: https://img.shields.io/badge/node-3e3f34?style=for-the-badge&logo=nodedotjs&logoColor=green
 [Next-url]: https://nextjs.org/
+[Node-url]: https://nodejs.org/en
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Express.js]: https://img.shields.io/badge/Express.js-35495E?style=for-the-badge&logo=express
@@ -149,6 +153,8 @@ Project Link: https://app.bloodsense.online
 [Render-url]:https://render.com/
 [NameCheap]:https://img.shields.io/badge/NameCheap-ff8c44?style=for-the-badge&logo=namecheap&logoColor=ffffff
 [Namecheap-url]:https://www.namecheap.com/domains/
+[Docker]:https://img.shields.io/badge/Docker-0092e6?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com/
 
 
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
