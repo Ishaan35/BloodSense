@@ -21,16 +21,16 @@ This app authenticates its users using a session-based approach using express-se
 
 ### Built With
 
+* [![][Microsoft Azure]][Azure-url]
+* [![][AWS]][AWS-url]
 * [![][Docker]][Node-url]
 * [![Node][Node.js]][Node-url]
+* [![][MySQL]][SQL-url]
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Express][Express.js]][Express-url]
 * [![Passport][Passport.js]][Passport-url]
-* [![][MySQL]][SQL-url]
 * [![][Google Cloud]][GoogleCloud-url]
-* [![][Microsoft Azure]][Azure-url]
-* [![][AWS]][AWS-url]
 * [![][Vercel]][Vercel-url]
 * [![][Render]][Render-url]
 * [![][NameCheap]][Namecheap-url]
