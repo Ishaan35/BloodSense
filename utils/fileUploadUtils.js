@@ -3,12 +3,12 @@ const {
   StorageSharedKeyCredential,
 } = require("@azure/storage-blob");
 const { uuid } = require("uuidv4");
-require('dotenv').config();
 const fs = require('fs')
 const path = require('path')
+const SecretStore = require("../secret/SecretStore");
 
 
-const connectionString1 = process.env.AZURE_BLOB_STORAGE_CONTAINER_CONNECTION_STRING;
+const connectionString1 = SecretStore.GetSecret("AZURE_BLOB_STORAGE_CONTAINER_CONNECTION_STRING");
 
 const blobServiceClient = BlobServiceClient.fromConnectionString(connectionString1);
 const containerName = "bloodtesttracker2files";
@@ -66,12 +66,12 @@ const deleteDocumentById = async (documentId) => {
 };
 
 const getUrlFromFileName = (filename) =>{
-    const url = `${process.env.AZURE_BLOB_BASE_URL}/${filename}?${process.env.AZURE_BLOB_SAS_TOKEN}`;
+    const url = `${SecretStore.GetSecret("AZURE_BLOB_BASE_URL")}/${filename}?${SecretStore.GetSecret("AZURE_BLOB_SAS_TOKEN")}`;
     return url;
 }
 
 const getDocumentUrlFromFileName = (filename) =>{
-  const url = `${process.env.AZURE_BLOB_BASE_URL_DOCUMENTS}/${filename}?${process.env.AZURE_BLOB_SAS_TOKEN_DOCUMENTS}`;
+  const url = `${SecretStore.GetSecret("AZURE_BLOB_BASE_URL_DOCUMENTS")}/${filename}?${SecretStore.GetSecret("AZURE_BLOB_SAS_TOKEN_DOCUMENTS")}`;
   return url;
 }
 

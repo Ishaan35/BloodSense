@@ -1,7 +1,6 @@
 const { Router } = require("express");
 const router = Router();
 const {wait} = require('../utils/fileUploadUtils')
-require('dotenv').config();
 const { uuid } = require("uuidv4");
 const {createNewRecord, getRecordByRecordID, updateExistingRecord, getAllUserRecordsMax50, deleteExistingRecord} = require('../utils/RecordDataManager');
 const { queryPromise } = require("../utils/queryUtils");

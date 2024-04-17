@@ -1,10 +1,10 @@
 const { Router } = require("express");
 const router = Router();
 const {isUserAuthenticated} = require('../middleware/authCheck')
-require("dotenv").config();
+const SecretStore = require("../secret/SecretStore");
 
-const successLoginUrl = `${process.env.BASE_CLIENT_URL}/google-auth/success`;
-const errorLoginUrl = `${process.env.BASE_CLIENT_URL}/google-auth/error`;
+const successLoginUrl = `${SecretStore.GetSecret("BASE_CLIENT_URL")}/google-auth/success`;
+const errorLoginUrl = `${SecretStore.GetSecret("BASE_CLIENT_URL")}/google-auth/error`;
 
 module.exports = (passport) =>{
     //a middleware which will redirect us to the auth/google/callback url later on. But prompts a sign in first

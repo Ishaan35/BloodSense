@@ -1,11 +1,10 @@
 const { Router } = require("express");
 const router = Router();
 const {queryPromise} = require('../utils/queryUtils')
-require('dotenv').config();
 const multer = require("multer");
 const upload = multer({ dest: "uploads/" });
 const {uploadProfileImage} = require('../utils/fileUploadUtils')
-
+const SecretStore = require("../secret/SecretStore");
 
 module.exports = (passport) =>{
 
@@ -84,8 +83,8 @@ module.exports = (passport) =>{
                 }
                 try{
                     let response = await uploadProfileImage(profileImage); ///gives normal azure blob url to us
-                    let imageName = response.replace(process.env.AZURE_BLOB_BASE_URL + "/", "").trim(); //extract just the file name of the image so we hide the details of the blob azure storage and sas key                
-                    imageSRC = `${process.env.BASE_SERVER_URL}/images/${imageName}`;
+                    let imageName = response.replace(SecretStore.GetSecret("AZURE_BLOB_BASE_URL") + "/", "").trim(); //extract just the file name of the image so we hide the details of the blob azure storage and sas key                
+                    imageSRC = `${SecretStore.GetSecret("BASE_SERVER_URL")}/images/${imageName}`;
                 }catch(err){
                     console.log(err);
                 }

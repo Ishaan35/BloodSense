@@ -1,15 +1,14 @@
-require('dotenv').config();
 const GoogleStrategy = require('passport-google-oauth2').Strategy
-const db = require('../db/postgresDb')
 const {queryPromise} = require('../utils/queryUtils')
-const CALLBACK_URL = `${process.env.BASE_SERVER_URL}/auth/google/callback`;
+const SecretStore = require("../secret/SecretStore");
+const CALLBACK_URL = `${SecretStore.GetSecret("BASE_SERVER_URL")}/auth/google/callback`;
 
 module.exports = function(passport) {
     
     passport.use(
       new GoogleStrategy({
-        clientID: process.env.GOOGLE_AUTH_CLIENT_ID,
-        clientSecret: process.env.GOOGLE_AUTH_CLIENT_SECRET,
+        clientID: SecretStore.GetSecret("GOOGLE_AUTH_CLIENT_ID"),
+        clientSecret: SecretStore.GetSecret("GOOGLE_AUTH_CLIENT_SECRET"),
         callbackURL: CALLBACK_URL,
         passReqToCallback: true
       }, async function verify(req, accessToken, refreshToken, profile, doneCb){

@@ -1,13 +1,13 @@
 const fs = require('fs')
 const crypto = require('crypto')
 const path = require('path')
-require('dotenv').config()
+const SecretStore = require("../secret/SecretStore");
 
-const KeyHex = process.env.ENC_KEY_HEX;
+const KeyHex = SecretStore.GetSecret("ENC_KEY_HEX");
 const key = Buffer.from(KeyHex, 'hex');
 
 // Test IV (128-bit IV represented in hexadecimal)
-const IVHex = process.env.ENC_IV_HEX;
+const IVHex = SecretStore.GetSecret("ENC_IV_HEX");
 const iv = Buffer.from(IVHex, 'hex');
 
 function encryptFile(inputFile, outputFile) {

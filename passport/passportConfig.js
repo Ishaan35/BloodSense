@@ -1,7 +1,6 @@
 const db = require('../db/postgresDb')
 const bcrypt = require('bcrypt')
 const localStrategy = require('passport-local').Strategy;
-require('dotenv').config();
 const {queryPromise} = require('../utils/queryUtils')
 
 module.exports = (passport) =>{

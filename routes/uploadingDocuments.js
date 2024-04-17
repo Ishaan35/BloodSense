@@ -1,9 +1,9 @@
 const { Router } = require("express");
 const router = Router();
 const multer = require("multer");
-require("dotenv").config();
 const {uploadDocument, deleteDocumentById, wait} = require('../utils/fileUploadUtils')
 const { queryPromise } = require("../utils/queryUtils");
+const SecretStore = require("../secret/SecretStore");
 
 const {encryptFile, decryptFile} = require('../utils/fileEncryption')
 
@@ -62,8 +62,8 @@ module.exports = (passport) =>{
                        //give the original file so it can extract the details, but we will use the path of the encrypted file as we want to upload the encrypted file as the blob itself
                        //if encryptedFileName is undefined, then the uploadDocument method will authomatically just use the original file's path and upload that (uploadedFile.path)
                        let response = await uploadDocument(uploadedFile,encryptedFileName);
-                       let fileIDName = response.replace(process.env.AZURE_BLOB_BASE_URL_DOCUMENTS + "/", "").trim(); //extract just the file name of the image so we hide the details of the blob azure storage and sas key                
-                       fileSRC = `${process.env.BASE_SERVER_URL}/files/${fileIDName}`;
+                       let fileIDName = response.replace(SecretStore.GetSecret("AZURE_BLOB_BASE_URL_DOCUMENTS") + "/", "").trim(); //extract just the file name of the image so we hide the details of the blob azure storage and sas key                
+                       fileSRC = `${SecretStore.GetSecret("BASE_SERVER_URL")}/files/${fileIDName}`;
    
                        
    

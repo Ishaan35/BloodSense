@@ -1,8 +1,8 @@
 const CosmosDBClient = require('./cosmosDBClient');
-require('dotenv').config();
+const SecretStore = require("../secret/SecretStore");
 
 const getSingleBiomarkerDataAcrossRecords = async (selectedBiomarker, minimumDate, userID) =>{
-    const container = CosmosDBClient.database(process.env.AZURE_COSMOS_DB_ID).container(process.env.AZURE_COSMOS_CONTAINER_ID);
+    const container = CosmosDBClient.database(SecretStore.GetSecret("AZURE_COSMOS_DB_ID")).container(SecretStore.GetSecret("AZURE_COSMOS_CONTAINER_ID"));
 
     const queryStr = 
         `
@@ -34,8 +34,8 @@ const getSingleBiomarkerDataAcrossRecords = async (selectedBiomarker, minimumDat
 
 const getRecordFormelementValues = async (userID, recordIDs) => {
     const container = CosmosDBClient.database(
-      process.env.AZURE_COSMOS_DB_ID
-    ).container(process.env.AZURE_COSMOS_CONTAINER_ID);
+      SecretStore.GetSecret("AZURE_COSMOS_DB_ID")
+    ).container(SecretStore.GetSecret("AZURE_COSMOS_CONTAINER_ID"));
 
   const idsString = recordIDs.map((id) => `'${id}'`).join(",");
   const dynamicQuery = `

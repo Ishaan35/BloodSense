@@ -1,6 +1,6 @@
 const { CosmosClient } = require("@azure/cosmos");
-require('dotenv').config()
+const SecretStore = require("../secret/SecretStore");
 
-const CosmosDBClient = new CosmosClient(process.env.AZURE_COSMOS_DB_PRIMARY_CONNECTION_STRING);
+const CosmosDBClient = new CosmosClient(SecretStore.GetSecret("AZURE_COSMOS_DB_PRIMARY_CONNECTION_STRING"));
 
 module.exports = CosmosDBClient;

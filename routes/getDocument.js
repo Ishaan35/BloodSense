@@ -1,6 +1,5 @@
 const { Router } = require("express");
 const router = Router();
-require("dotenv").config();
 const multer = require("multer");
 const upload = multer({ dest: "uploads/" });
 const { getDocumentUrlFromFileName } = require("../utils/fileUploadUtils");

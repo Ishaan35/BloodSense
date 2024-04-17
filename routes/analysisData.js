@@ -1,6 +1,5 @@
 const { Router } = require("express");
 const router = Router();
-require("dotenv").config();
 const {
   getSingleBiomarkerDataAcrossRecords,
   getRecordFormelementValues,

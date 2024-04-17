@@ -1,10 +1,10 @@
 const CosmosDBClient = require('./cosmosDBClient');
 const { queryPromise } = require('./queryUtils');
-require('dotenv').config();
+const SecretStore = require("../secret/SecretStore");
 
 const createNewRecord = async (data) =>{
     try{
-        const container = CosmosDBClient.database(process.env.AZURE_COSMOS_DB_ID).container(process.env.AZURE_COSMOS_CONTAINER_ID);
+        const container = CosmosDBClient.database(SecretStore.GetSecret("AZURE_COSMOS_DB_ID")).container(SecretStore.GetSecret("AZURE_COSMOS_CONTAINER_ID"));
 
 
         const { resource: createdDocument } = await container.items.create(data);
@@ -17,7 +17,7 @@ const createNewRecord = async (data) =>{
 
 const updateExistingRecord = async (data, userID) =>{
     try{
-        const container = CosmosDBClient.database(process.env.AZURE_COSMOS_DB_ID).container(process.env.AZURE_COSMOS_CONTAINER_ID);
+        const container = CosmosDBClient.database(SecretStore.GetSecret("AZURE_COSMOS_DB_ID")).container(SecretStore.GetSecret("AZURE_COSMOS_CONTAINER_ID"));
 
         data.UserID = userID;
 
@@ -70,7 +70,7 @@ const updateExistingRecord = async (data, userID) =>{
 
 const deleteExistingRecord = async (data, userID) =>{
     try{
-        const container = CosmosDBClient.database(process.env.AZURE_COSMOS_DB_ID).container(process.env.AZURE_COSMOS_CONTAINER_ID);
+        const container = CosmosDBClient.database(SecretStore.GetSecret("AZURE_COSMOS_DB_ID")).container(SecretStore.GetSecret("AZURE_COSMOS_CONTAINER_ID"));
         await container.item(data.id, userID).delete();
 
 
@@ -86,7 +86,7 @@ const deleteExistingRecord = async (data, userID) =>{
 }
 
 const getRecordByRecordID = async (recordID, userID) =>{
-    const container = CosmosDBClient.database(process.env.AZURE_COSMOS_DB_ID).container(process.env.AZURE_COSMOS_CONTAINER_ID);
+    const container = CosmosDBClient.database(SecretStore.GetSecret("AZURE_COSMOS_DB_ID")).container(SecretStore.GetSecret("AZURE_COSMOS_CONTAINER_ID"));
 
     try{
         const { resource: document } = await container.item(recordID, userID).read();

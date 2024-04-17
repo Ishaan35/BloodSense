@@ -3,7 +3,6 @@ const router = Router();
 const bcrypt = require("bcrypt");
 const { uuid } = require("uuidv4");
 const {queryPromise} = require('../utils/queryUtils')
-require('dotenv').config();
 const {isUserAuthenticated} = require('../middleware/authCheck')
 
 module.exports = (passport) => {
