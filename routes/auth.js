@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const router = Router();
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const { uuid } = require("uuidv4");
 const {queryPromise} = require('../utils/queryUtils')
 const {isUserAuthenticated} = require('../middleware/authCheck')

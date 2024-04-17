@@ -1,5 +1,5 @@
 const db = require('../db/postgresDb')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const localStrategy = require('passport-local').Strategy;
 const {queryPromise} = require('../utils/queryUtils')
 

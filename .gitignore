@@ -135,3 +135,5 @@ dist
 
 DigiCertGlobalRootCA.crt.pem
 prod-ca-2021.crt
+
+IMPORTANT_DO_NOT_USE_DOCKERCOMPOSE_FOR_PROD_IMAGE_BUILDS.txt

@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/usr/src/app
+    command: npm start
+    env_file:
+      - .env
+      - .env.localoverride
