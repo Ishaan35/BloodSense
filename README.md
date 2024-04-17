@@ -16,7 +16,7 @@
 
 This is a full-stack desktop web application to help people better organize and track their bloodwork history to spot trends, and take action. Users can also manually upload their bloodwork documents to one place, which are encrypted at rest. The website can be found here: https://app.bloodsense.online.  I have made this as an extension to the mobile version of this app which can be found on the Google Play Store [here](https://play.google.com/store/apps/details?id=com.ishaanp.test&hl=en_IN&gl=US).
 
-This app authenticates its users using a session-based approach using express-session and passport.js on the server side. There are two approaches to signing into the app: Google SSO, and the traditional username and password method. The client and server applications themselves are hosted as subdomains under a custom domain from NameCheap. User data is stored in a MySQL database hosted on Azure Cloud, files and images are encrypted at rest and stored in Azure Blob Storage containers, and bloodwork data is stored in Azure Cosmos DB containers.
+This app authenticates its users using a session-based approach using express-session and passport.js on the server side. There are two approaches to signing into the app: Google SSO, and the traditional username and password method. The client and server applications themselves are hosted as subdomains under a custom domain from NameCheap. User data is stored in a PostgreSQL database hosted on Azure Cloud, files and images are encrypted at rest and stored in Azure Blob Storage containers, and bloodwork data is stored in Azure Cosmos DB containers.
 
 
 ### Built With
